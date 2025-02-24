@@ -3,21 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const link = document.getElementById("openModal");
     const closeBtn = document.querySelector(".close");
 
-    // Garante que o modal esteja fechado ao iniciar
+    
     modal.style.display = "none";
 
     link.addEventListener("click", (event) => {
         event.preventDefault();
-        modal.style.display = "flex"; // Exibe o modal ao clicar no link
+        modal.style.display = "flex"; 
     });
 
     closeBtn.addEventListener("click", () => {
-        modal.style.display = "none"; // Fecha ao clicar no botão
+        modal.style.display = "none"; 
     });
 
     window.addEventListener("click", (event) => {
         if (event.target === modal) {
-            modal.style.display = "none"; // Fecha ao clicar fora do modal
+            modal.style.display = "none";
         }
     });
 });
