@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Daniele Karina dos Santos</title>
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/acordeon.css">
+    <link rel="stylesheet" href="src/css/languages.css">
+    <link rel="stylesheet" href="src/css/projects.css">
+    <link rel="stylesheet" href="src/css/modal.css">
+    <link rel="stylesheet" href="src/css/long-life-learning.css">
+    <link rel="stylesheet" href="src/css/skills.css">
+
+    
+</head>
+<body>
+    <main class="main">
+        
+        <header class="header">
+            <div class="loader-container">
+                <span class="loader"></span>
+                <span class="loader"></span>
+                <span class="loader"></span>
+            </div>    
+            <img class="header__photo" src="src/images/photo.png" alt="foto de Daniele">
+            
+            <div class="header__information">
+                <h1 class="header__title">Olá, <br>eu sou a Daniele</h1>
+            
+                <div class="header__paragraphs">
+                   <div class="header__paragraph">
+                        <i class="bi bi-linkedin"></i>
+                        <p>
+                            <a href="https://www.linkedin.com/in/daniele-karina-dos-santos-a34b45204/" target="_blank">Desenvolvedora Front-end Júnior</a>
+                        </p>
+                    </div>
+                    <div class="header__paragraph">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p>
+                            <a href="#" id="openModal">
+                                Piracicaba - SP
+                            </a>
+                        </p>
+                        <div id="mapModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942234.9696121935!2d-48.97761800809324!3d-22.705730789892204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c631a5af864bcd%3A0x1b74b86e744eb12c!2sPiracicaba%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1740129417750!5m2!1spt-BR!2sbr"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__paragraph">
+                        <i class="bi bi-whatsapp"></i>
+                        <p>
+                            <a href="https://wa.me/16982038845" target="_blank">
+                                (16)98203-8845
+                            </a>
+                        </p>
+                    </div>
+                    <div class="header__paragraph">
+                        <i class="bi bi-envelope"></i>
+                        <p>
+                            <a href="mailto:danimistron@gmail.com" target="_blank">
+                                danimistron@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <section class="acordeon">
+            <div class="acordeon__header">
+                <button class="trigger" type="button">
+                    <h2>Habilidades</h2>
+                </button>
+                <i class="bi bi-caret-up-fill"></i>
+            </div>
+            
+            <div class="content">
+                <div class="skills">
+                    <section class="hard-skills">
+                        <h3>Habilidades Profissionais</h3>
+                        <ul>
+                            <li>
+                                <img src="src/images/html5-original.svg" alt="html" title="html">
+                            </li>
+                            <li>
+                                <img src="src/images/css3-original.svg" alt="css" title="css">
+                            </li>
+                            <li>
+                                <img src="src/images/javascript-original.svg" alt="JavaScript" title="JavaScript">
+                            </li>
+                            <li>
+                                <img src="src/images/github-original.svg" alt="GitHub" title="GitHub">
+                            </li>
+                            <li>
+                                <img class="bootstrap-icon" src="src/images/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap">
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="soft-skills">
+                        <h3 class="soft-skills__title">Habilidades Pessoais</h3>
+                        <ul>
+                            <li>Comunicação</li>
+                            <li>Organização</li>
+                            <li>Comprometimento</li>
+                            <li>Trabalho em equipe</li>
+                            <li>Empatia</li>
+                            <li>Resiliência</li>
+                            <li>Adaptabilidade</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+                
+        <section class="acordeon">
+            <div class="acordeon__header">
+                <button class="trigger" type="button">
+                    <h2>Projetos</h2>
+                </button>
+                <i class="bi bi-caret-up-fill"></i>
+            </div>
+            
+            <div class="content">
+                <ul class="projects">
+                    <!--                    
+                    <li>
+                        <h3 class="projects__title">Clone Spotify - Imersão Front-end Alura 🎵</h3>
+                        <a class="projects__link" href="https://danieleksantos.github.io/Clone-Spotify-Imersao-Front_end_Alura/" target="_blank">Versão online do projeto</a>
+                        <a class="projects__link-repository" href="https://github.com/danieleksantos/Clone-Spotify-Imersao-Front_end_Alura" target="_blank">Repositório no GitHub</a>
+                    </li>
+                    <li>
+                        <h3 class="projects__title">Plataforma de Inscrições com com Links de Referência Personalizados 👥</h3>
+                        <a class="projects__link" href="https://danieleksantos.github.io/Clone-Spotify-Imersao-Front_end_Alura/" target="_blank">Versão online do projeto</a>
+                        <a class="projects__link-repository" href="https://github.com/danieleksantos/Clone-Spotify-Imersao-Front_end_Alura" target="_blank">Repositório no GitHub</a>
+                    </li>
+                    <li>
+                        <h3 class="projects__title">Teclado Virtual com JavaScript</h3>
+                        <a class="projects__link" href="https://danieleksantos.github.io/Projeto-de-Estudo__js-music-keyboard-virtual/" target="_blank">Versão online do projeto</a>
+                        <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-de-Estudo__js-music-keyboard-virtual" target="_blank">Repositório no GitHub</a>
+                    </li>                  
+                     -->
+
+
+                    <!-- coffe shop -->
+                    <li>
+                        <div class="projects__container">
+                            <div class="projects__description">
+                                <h3 class="projects__title">
+                                    Coffee Shop - Landing Page
+                                </h3>
+                                <img src="src/images/prints-projects/coffee-shop-cell-mockup2.png" alt="projeto coffee shop">
+                            </div>
+                            
+                            <div class="projects__details">
+                                <p> Landing page responsiva desenvolvida para cafeteria, focada em proporcionar uma experiência visual agradável e intuitiva em diferentes dispositivos. O projeto foi estruturado aplicando princípios de design responsivo, layout flexível e boas práticas modernas de front-end, garantindo acessibilidade e usabilidade. 
+                                <br>
+                                <span>Técnologias utilizadas:</span> HTML, CSS e Bootstrap, com estilização personalizada para oferecer um design diferenciado e alinhado à identidade da marca.
+                                </p>
+                                <a class="projects__link" href="https://danieleksantos.github.io/Projeto-de-Estudo__Landpage-CSS_CoffeeShop-BOOTSTRAP/" target="_blank">
+                                    Versão online do projeto
+                                </a>
+                                <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-de-Estudo__Landpage-CSS_CoffeeShop-BOOTSTRAP" target="_blank">
+                                    Repositório no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </li>                                    
+                    <!-- hbo max -->
+                    <li>
+                        <div class="projects__container reverse">
+                            <div class="projects__description">
+                                <h3 class="projects__title">
+                                    Landing Page HBO Max
+                                </h3>
+                                <img src="src/images/prints-projects/hbo-max-mockup.png" alt="Projeto landpage HBO Max">
+                            </div>
+                            
+                            <div class="projects__details">
+                                <p>Landpage clone da plataforma HBO MAX, com o objetivo de criar uma interface visualmente atraente e responsiva. O projeto utiliza conceitos avançados de CSS, como layout flexível, animações e efeitos de transição, para proporcionar uma experiência de navegação fluida e agradável. <br> <span>Tecnologias utilizadas:</span> HTML e CSS, com foco em estilização personalizada para criar um design moderno e adaptável a diferentes dispositivos.</p>
+                                <a class="projects__link" href="https://danieleksantos.github.io/Projeto-Final-CSS-Developer__Landpage-HBO_MAX/" target="_blank">
+                                    Versão online do projeto
+                                </a>
+                                <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-Final-CSS-Developer__Landpage-HBO_MAX" target="_blank">
+                                    Repositório no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- discord -->
+                    <li>
+                        <div class="projects__container">
+                            <div class="projects__description">
+                                <h3 class="projects__title">
+                                    Landpage Discord Clone | static | responsive
+                                </h3>
+                                <img src="src/images/prints-projects/discord-mockup.png" alt="Projeto landpage Mundo Invertido">
+                            </div>
+                            
+                            <div class="projects__details">
+                                <p>Landpage interativa inspirada no universo de Stranger Things, com o objetivo de recriar o ambiente imersivo do Mundo Invertido. O projeto utiliza conceitos avançados de CSS, como efeitos de transição, animações e layout responsivo, proporcionando uma experiência visual única e envolvente. <br> <span>Tecnologias utilizadas:</span> HTML e CSS, com foco em estilização personalizada para capturar a atmosfera do Mundo Invertido e criar um design dinâmico.</p>
+
+                                <a class="projects__link" href="https://danieleksantos.github.io/Projeto-de-Estudo__Landpage-Discord-Clone-static-RESPONSIVE/" target="_blank">
+                                    Versão online do projeto
+                                </a>
+                                <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-de-Estudo__Landpage-Discord-Clone-static-RESPONSIVE">
+                                    Repositório no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--pokedex-->
+                    <li>
+                        <div class="projects__container reverse">
+                            <div class="projects__description">
+                                <h3 class="projects__title">
+                                    Pokemón | Pokedex
+                                </h3>
+                                <img src="src/images/prints-projects/pokedex-mockup.png" alt="Projeto landpage Pokedex">
+                            </div>
+                            
+                            <div class="projects__details">
+                                <p>O projeto Pokedex teve como objetivo de criar uma experiência envolvente ao explorar o mundo do Pokemon. O projeto foca no desenvolvimento de habilidades com JavaScript, consumo de APIs e manipulação do DOM, resultando em uma aplicação dinâmica e intuitiva. <br> <span>Tecnologias utilizadas:</span> HTML, CSS e JavaScript, com integração à PokéAPI para listar e exibir informações detalhadas sobre os Pokémon. A interface responsiva e estilizada proporciona uma navegação fluida e adaptável a diferentes dispositivos, tornando a experiência ainda mais imersiva.</p>
+
+                                <a class="projects__link" href="https://danieleksantos.github.io/Projeto-de-Estudo__Pokedex-JavaScript-API/" target="_blank">
+                                    Versão online do projeto
+                                </a>
+                                <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-de-Estudo__Pokedex-JavaScript-API">
+                                    Repositório no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- mundo invertido -->
+                    <li>
+                        <div class="projects__container">
+                            <div class="projects__description">
+                                <h3 class="projects__title">
+                                    Mundo Invertido - Stranger Things
+                                </h3>
+                                <img src="src/images/prints-projects/mundo-invertido-mockup.png" alt="Projeto landpage Mundo Invertido">
+                            </div>
+                            
+                            <div class="projects__details">
+                                <p>Landpage interativa inspirada no universo de Stranger Things, com o objetivo de recriar o ambiente imersivo do Mundo Invertido. O projeto utiliza conceitos avançados de CSS, como efeitos de transição, animações e layout responsivo, proporcionando uma experiência visual única e envolvente. <br> <span>Tecnologias utilizadas:</span> HTML e CSS, com foco em estilização personalizada para capturar a atmosfera do Mundo Invertido e criar um design dinâmico.</p>
+
+                                <a class="projects__link" href="https://danieleksantos.github.io/Projeto-de-Estudo__Mundo-Invertido-Stranger-Things/" target="_blank">
+                                    Versão online do projeto
+                                </a>
+                                <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-de-Estudo__Mundo-Invertido-Stranger-Things">
+                                    Repositório no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Jo-ken-po Yu-gi-oh -->
+                    <li>
+                        <div class="projects__container reverse">
+                            <div class="projects__description">
+                                <h3 class="projects__title">
+                                    GAME Jo-ken-po versão Yu-gi-oh
+                                </h3>
+                                <img src="src/images/prints-projects/jo-ken-po-yugioh-mockup.png" alt="Projeto game jo-ken-po versão Yu-Gi-Oh">
+                            </div>
+                            
+                            <div class="projects__details">
+                                <p>Jogo interativo inspirado no universo de Yu-Gi-Oh!, combinando a mecânica do clássico Jo-Ken-Po com elementos estratégicos de batalhas de cartas. O projeto simula combates entre dois jogadores, alternando turnos para invocar cartas e realizar ataques, proporcionando uma experiência dinâmica e envolvente. A interface interativa exibe cartas, pontos de vida e resultados das ações em tempo real, tornando o jogo acessível e intuitivo. <br> <span>Tecnologias utilizadas:</span> HTML, CSS e JavaScript, aplicados para estruturar a página, estilizar a interface e implementar a lógica do jogo, garantindo fluidez e interatividade na experiência do usuário.</p>
+                                <a class="projects__link" href="https://danieleksantos.github.io/Projeto-de-Estudo__GAME-Yugioh/" target="_blank">
+                                    Versão online do projeto
+                                </a>
+                                <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-de-Estudo__GAME-Yugioh" target="_blank">
+                                    Repositório no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- jogo da memoria -->
+                    <li>
+                        <div class="projects__container">
+                            <div class="projects__description">
+                                <h3 class="projects__title">
+                                    GAME Jogo Da Memória
+                                </h3>
+                                <img src="src/images/prints-projects/jogo-da-memoria-mockup.png" alt="Projeto game jogo da memória">
+                            </div>
+                            
+                            <div class="projects__details">
+                                <p> Jogo da Memória interativo desenvolvido para aprimorar habilidades lógicas e de memorização, com uma interface dinâmica. O projeto foi estruturado aplicando conceitos de manipulação do DOM, eventos JavaScript e estilização personalizada, garantindo uma experiência fluida e envolvente para o usuário. <br> <span>Tecnologias utilizadas:</span> HTML, CSS e JavaScript, com lógica programada para embaralhamento de cartas e verificação de pares.</p>
+                                <a class="projects__link" href="https://danieleksantos.github.io/Projeto-de-Estudo__GAME-JogoDaMemoria/" target="_blank">
+                                    Versão online do projeto
+                                </a>
+                                <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-de-Estudo__GAME-JogoDaMemoria" target="_blank">
+                                    Repositório no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <div class="acordeon__header">
+                <button class="trigger" type="button">
+                    <h2>Aprendizado contínuo</h2>
+                </button>
+                <i class="bi bi-caret-up-fill"></i>
+            </div>
+            
+            <div class="content">
+                <ul class="long-life-learning">
+                    <li>
+                        <h3>JavaScript Developer /   DIO </h3>
+                        <p> Conceitos fundamentais da linguagem, manipulação de DOM, eventos, funções, arrays, objetos e boas práticas para o desenvolvimento de aplicações web interativas e dinâmicas.</p>
+                    </li>   
+                    <li>
+                        <h3>CS50: Introduction to Computer Science / Harvard</h3>
+                        <p> Introdução à ciência da computação, abordando algoritmos, estruturas de dados, programação em C, Python e desenvolvimento web, com ênfase em resolução de problemas e pensamento computacional.</p>
+                    </li>
+                    <li>
+                        <h3>CSS Web Developer / DIO</h3>
+                        <p> Estilização de páginas web, layout responsivo, posicionamento de elementos, uso de Flexbox e Grid, além de técnicas avançadas para design e otimização visual de interfaces.</p>
+                    </li>
+                    <li>
+                        <h3>HTML Web Developer / DIO</h3>
+                        <p> Desenvolvimento de páginas web, abordando estruturação de conteúdo, semântica, formatação e integração de elementos multimídia, além de práticas para otimização e acessibilidade.</p>
+                    </li>
+                    <li>
+                        <h3>Front-End do Zero (Ri Happy) / DIO</h3>
+                        <p> Formação completa em desenvolvimento Front-End, cobrindo HTML, CSS, JavaScript e fundamentos de design responsivo, com foco na criação de interfaces de usuário e boas práticas de desenvolvimento para a web.</p>
+                    </li>
+                    <li>
+                        <h3>GitHub Certification / DIO</h3>
+                        <p> Controle de versão, gerenciamento de repositórios, criação de branches, pull requests e boas práticas de versionamento para colaboração eficiente em projetos.</p>
+                    </li>
+                    <li>
+                        <h3>Algoritmos / Curso em Vídeo</h3>
+                        <p> Fundamentos da lógica de programação, incluindo variáveis, operadores, estruturas condicionais e de repetição, utilizando Portugol para desenvolver o raciocínio lógico.</p>
+                    </li>                    
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <div class="acordeon__header">
+                <button class="trigger" type="button">
+                    <h2>Idiomas</h2>
+                </button>
+                <i class="bi bi-caret-up-fill"></i>
+            </div>
+            
+            <div class="content">
+                <ul class="languages">
+                    <li><h3>Português</h3></li>
+                    <li><h3>Inglês (Intermediário)</h3></li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="src/script/script.js"></script>
+    <script src="src/script/modal.js"></script>
+</body>
+</html>

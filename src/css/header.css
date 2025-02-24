@@ -1,0 +1,82 @@
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.loader-container {
+display: flex;
+align-self: flex-end;
+}
+
+.loader {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.loader:nth-child(1) {
+    animation: loader .8s  ease-in-out alternate infinite;
+}
+
+.loader:nth-child(2) {
+    animation: loader .8s  ease-in-out .3s alternate infinite;
+}
+
+.loader:nth-child(3) {
+    animation: loader .8s  ease-in-out .6s alternate infinite;
+}
+
+@keyframes loader {
+    to {
+        transform: scale(1.8);
+    }
+}
+
+.header__photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.header__title {
+    font-family: "Playfair Display", serif;    text-align: center;
+}
+
+.header__paragraphs p{
+    margin: .5rem;
+    font-weight: 500;
+}
+
+.header__paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__paragraph i {
+    font-size: 1.2rem;
+}
+
+
+@media screen and (min-width:768px){
+    .header {
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+        justify-content: center;
+    }
+    .header__title {
+        text-align: left;
+    }
+
+    .loader-container {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+
+    }
+   
+}
