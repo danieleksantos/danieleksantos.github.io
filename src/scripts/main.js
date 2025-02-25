@@ -19,6 +19,24 @@ function updateProfileInfo (profileData){
     email.href = `mailto:${profileData.email}`
 }
 
+function updateHardSkills (profileData) {
+    const hardSkillsList = document.querySelector('.hard-skills-list')
+
+    hardSkillsList.innerHTML = ''
+    
+    profileData.skills.hardSkills.forEach(skill => {
+        const li = document.createElement('li')
+        li.classList.add('hard-skills-item')
+
+        const img = document.createElement('img')
+        img.src = skill.logo
+        img.alt = skill.name
+        img.title = skill.name
+        li.appendChild(img)
+        hardSkillsList.appendChild(li)
+    })
+}
+
 function updateSoftSkills(profileData) {
     const softSkillsList = document.querySelector('.soft-skills-list')
 
@@ -38,4 +56,5 @@ function updateSoftSkills(profileData) {
     const profileData = await fetchProfileData()
     updateProfileInfo(profileData)
     updateSoftSkills(profileData)
+    updateHardSkills(profileData)
 })()
