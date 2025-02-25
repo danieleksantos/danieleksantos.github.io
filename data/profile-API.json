@@ -38,9 +38,13 @@
       "Adaptabilidade"
     ]
   },
-  "portfolio": [
+  "languages": [
+    "Português BR",
+    "Inglês (Intermediário)"
+  ],
+  "projects": [
     {
-      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
+      "name": "Coffee Shop - Landing Page",
       "url": "https://github.com/RenanJPaula/js-developer-pokedex",
       "github": true
     },
