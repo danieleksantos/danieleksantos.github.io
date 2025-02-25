@@ -8,14 +8,14 @@
     list-style: none;
 }
 
-.languages li {
+.languages-item {
     padding: 0 1rem 1rem 1.8rem;
     position: relative;
     font-weight: 700;
     font-size: 1.1rem;
 }
 
-.languages h3::before {
+.languages-item::before {
     content: '';
     position: absolute;
     left: 0;

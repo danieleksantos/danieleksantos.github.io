@@ -50,6 +50,24 @@ function updateSoftSkills(profileData) {
     })
 }
 
+function updateSoftSkills(profileData) {
+    const softSkillsList = document.querySelector('.soft-skills-list')
+
+    softSkillsList.innerHTML = ''
+
+    profileData.skills.softSkills.forEach(skill => {
+        const li = document.createElement('li') 
+        li.textContent = skill 
+        li.classList.add('soft-skills-item')
+        softSkillsList.appendChild(li) 
+    })
+}
+
+// function updateLanguages (profileData) {
+//     const languages = document.getElementById('profile-languages')
+//     languages.innerHTML = profileData.languages.map(languages => `<li>${languages}<li/>`).join('')
+// }
+
 
 
 (async () => {
@@ -57,4 +75,5 @@ function updateSoftSkills(profileData) {
     updateProfileInfo(profileData)
     updateSoftSkills(profileData)
     updateHardSkills(profileData)
+    updateLanguages(profileData)
 })()
