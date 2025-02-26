@@ -50,21 +50,8 @@ function updateSoftSkills(profileData) {
     })
 }
 
-function updateSoftSkills(profileData) {
-    const softSkillsList = document.querySelector('.soft-skills-list')
-
-    softSkillsList.innerHTML = ''
-
-    profileData.skills.softSkills.forEach(skill => {
-        const li = document.createElement('li') 
-        li.textContent = skill 
-        li.classList.add('soft-skills-item')
-        softSkillsList.appendChild(li) 
-    })
-}
-
- function updateLanguages (profileData) {
-     const languages = document.querySelector('.profile-languages')
+function updateLanguages (profileData) {
+     const languages = document.querySelector('#profile-languages')
 
      languages.innerHTML = ''
 
