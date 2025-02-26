@@ -63,10 +63,18 @@ function updateSoftSkills(profileData) {
     })
 }
 
-// function updateLanguages (profileData) {
-//     const languages = document.getElementById('profile-languages')
-//     languages.innerHTML = profileData.languages.map(languages => `<li>${languages}<li/>`).join('')
-// }
+ function updateLanguages (profileData) {
+     const languages = document.querySelector('.profile-languages')
+
+     languages.innerHTML = ''
+
+     profileData.languages.forEach(language => {
+        const li = document.createElement('li')
+        li.textContent = language
+        li.classList.add('languages-item')
+        languages.appendChild(li)
+     })
+}
 
 
 
