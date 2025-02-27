@@ -150,6 +150,19 @@
         margin: auto;
     }
 
+    .projects__details p {
+        font-size: .9rem;
+    }
+
+    .projects__details span{
+        font-size: .9rem;
+    }
+
+    .projects__link,
+    .projects__link-repository {
+    font-size: .8rem;
+    }
+
     .projects__container.reverse .projects__description {
         order: 2;
     }

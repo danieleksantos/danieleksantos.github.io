@@ -56,16 +56,16 @@
   ],
   "formation":[
     {
+      "name":"Gestão de Projetos",
+      "school":"Centro Universitário das Faculdades Associadas de Ensino | UNIFAE",
+      "degree":"Pós-graduação Lato Sensu - MBA",
+      "period":"2019-2020"
+    },
+    {
       "name":"Ciências da Informação e da Documentação",
       "degree":"Bacharel",
       "school":"Universidade de São Paulo | USP-RP",
       "period":"2011-2014"
-    },
-    {
-      "name":"Centro Universitário das Faculdades Associadas de Ensino | UNIFAE",
-      "school":"Universidade de São Paulo USP-RP",
-      "degree":"Pós-graduação Lato Sensu - MBA",
-      "period":"2019-2020"
     },
     {
       "name":"Informática",
