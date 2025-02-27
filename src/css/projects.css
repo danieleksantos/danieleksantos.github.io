@@ -118,15 +118,21 @@
 .all-projects__link a {
     display: inline-block;
     border: 3px solid #5c1f9b;
+    color: #5c1f9b;
     border-radius: 2rem;
     padding: 1rem 2rem;
-    transition: .3s ease-in-out;
+    transition: .3s ease-in;
+    background-color: #e3abf1;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .all-projects__link a:hover {
-    background-color: #ba55d3;
-    text-decoration: none;
+    border: 3px solid #e3abf1;
+    background-color: #5c1f9b;
+    color: #e3abf1;
     scale: 1.02;
+    font-weight: 500;
 }
 
 @media screen and (min-width:1024px){

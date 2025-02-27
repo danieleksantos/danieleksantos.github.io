@@ -53,5 +53,25 @@
       "url": "https://danieleksantos.github.io/Projeto-Final-CSS-Developer__Landpage-HBO_MAX/",
       "github": "https://github.com/danieleksantos/Projeto-Final-CSS-Developer__Landpage-HBO_MAX"
     }
+  ],
+  "formation":[
+    {
+      "name":"Ciências da Informação e da Documentação",
+      "degree":"Bacharel",
+      "school":"Universidade de São Paulo | USP-RP",
+      "Period":"2011-2014"
+    },
+    {
+      "name":"Centro Universitário das Faculdades Associadas de Ensino | UNIFAE",
+      "school":"Universidade de São Paulo USP-RP",
+      "degree":"Pós-graduação Lato Sensu - MBA",
+      "Period":"2019-2020"
+    },
+    {
+      "name":"Informática",
+      "school":"Sylvio de Mattos Carvalho | ETEC",
+      "degree":"Técnico",
+      "Period":"2008-2009"
+    }
   ]
 }
