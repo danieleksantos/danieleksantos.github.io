@@ -63,7 +63,23 @@ function updateLanguages (profileData) {
      })
 }
 
+function updateFormation (profileData) {
+    const formation = document.getElementById('profile-formation')
+    formation.innerHTML = profileData.formation.map(formation => `
+        <li>
+            <h3> ${formation.name} <span>(${formation.degree})</span></h3>
+            <p>${formation.school}</p>
+            <p>${formation.period}</p>
+        </li>
+        `
 
+    )
+}
+
+function updateHardSkills(profileData) {
+    const hardSkills = document.getElementById('profile.skills.hardSkills')
+    hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => `<li><img src="${skill.logo}" alt="${skill.name}" title="${skill.name}"></li>`).join('')
+}
 
 (async () => {
     const profileData = await fetchProfileData()
@@ -71,4 +87,5 @@ function updateLanguages (profileData) {
     updateSoftSkills(profileData)
     updateHardSkills(profileData)
     updateLanguages(profileData)
+    updateFormation(profileData)
 })()

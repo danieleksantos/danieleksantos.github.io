@@ -1,4 +1,4 @@
-.languages {
+.formation ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,14 +8,25 @@
     list-style: none;
 }
 
-.languages-item {
+ .formation ul li {
     padding: 0 1rem 1rem 1.8rem;
     position: relative;
     font-weight: 700;
     font-size: 1.1rem;
 }
 
-.languages-item::before {
+.formation p {
+    margin: .5rem 0;
+    font-weight: 500;
+}
+
+.formation span {
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.formation ul li::before {
     content: '';
     position: absolute;
     left: 0;
