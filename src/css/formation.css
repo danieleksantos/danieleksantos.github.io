@@ -1,7 +1,7 @@
 .formation ul {
     display: flex;
     flex-direction: column;
-    align-items: self-start;
+    align-items: self-st art;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
