@@ -8,6 +8,10 @@
   "skills": {
     "hardSkills": [
       {
+        "name":"REACT",
+        "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/5f8bf3faab885d5becb1050a24d1768fd8a94a4a/src/images/react.png"
+      },
+      {
         "name":"HTML",
         "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/html5-original.svg"
       },
