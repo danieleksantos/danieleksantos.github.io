@@ -5,7 +5,7 @@
 Este repositório contém o código-fonte do meu site pessoal, hospedado via GitHub Pages. 
 Além de apresentar informações sobre mim e meus projetos, o site carrega seu conteúdo de forma dinâmica através do consumo de uma API.
 
-## 🚀 Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - **HTML5**
 - **CSS3**
