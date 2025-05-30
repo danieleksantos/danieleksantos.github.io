@@ -129,9 +129,6 @@
 }
 
 .all-projects__link a:hover {
-    border: 3px solid #e3abf1;
-    background-color: #5c1f9b;
-    color: #e3abf1;
     scale: 1.02;
     font-weight: 500;
 }

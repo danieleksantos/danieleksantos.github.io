@@ -21,6 +21,10 @@ align-self: flex-end;
     font-family: "Playfair Display", serif;    text-align: center;
 }
 
+.header__headline {
+    font-size: 1.2rem;
+}
+
 .header__paragraphs p{
     margin: .5rem;
     font-weight: 500;
