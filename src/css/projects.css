@@ -121,16 +121,17 @@
     color: #5c1f9b;
     border-radius: 2rem;
     padding: 1rem 2rem;
-    transition: .3s ease-in;
     background-color: #e3abf1;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .all-projects__link a:hover {
-    scale: 1.02;
-    font-weight: 500;
+    text-decoration: underline;
+    font-weight: 900;
+
 }
 
 @media screen and (min-width:1024px){

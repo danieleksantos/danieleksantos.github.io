@@ -10,10 +10,6 @@ function updateProfileInfo (profileData){
     const job = document.getElementById('profile-job')
     job.innerText = profileData.job
 
-    const phone = document.getElementById('profile-phone')
-    phone.innerText = profileData.phone
-    phone.href = `https://wa.me/${profileData.phone}`
-
     const email = document.getElementById('profile-email')
     email.innerText = profileData.email
     email.href = `mailto:${profileData.email}`
@@ -37,48 +33,11 @@ function updateHardSkills (profileData) {
     })
 }
 
-function updateSoftSkills(profileData) {
-    const softSkillsList = document.querySelector('.soft-skills-list')
 
-    softSkillsList.innerHTML = ''
 
-    profileData.skills.softSkills.forEach(skill => {
-        const li = document.createElement('li') 
-        li.textContent = skill 
-        li.classList.add('soft-skills-item')
-        softSkillsList.appendChild(li) 
-    })
-}
-
-function updateLanguages (profileData) {
-     const languages = document.querySelector('#profile-languages')
-
-     languages.innerHTML = ''
-
-     profileData.languages.forEach(language => {
-        const li = document.createElement('li')
-        li.textContent = language
-        li.classList.add('languages-item')
-        languages.appendChild(li)
-     })
-}
-
-function updateFormation (profileData) {
-    const formation = document.getElementById('profile-formation')
-    formation.innerHTML = profileData.formation.map(formation => `
-        <li>
-            <h3> ${formation.name} <span>(${formation.degree})</span></h3>
-            <p>${formation.school}</p>
-            <p>${formation.period}</p>
-        </li>
-        `).join('')
-}
 
 (async () => {
     const profileData = await fetchProfileData()
     updateProfileInfo(profileData)
-    updateSoftSkills(profileData)
     updateHardSkills(profileData)
-    updateLanguages(profileData)
-    updateFormation(profileData)
 })()

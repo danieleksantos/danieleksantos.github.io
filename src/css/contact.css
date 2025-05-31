@@ -1,0 +1,13 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.contact i {
+    font-size: 2rem;
+}
+
+.contact a:hover {
+    transform: scale(1.05);
+}

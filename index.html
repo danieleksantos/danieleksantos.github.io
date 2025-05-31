@@ -25,12 +25,10 @@
     <link rel="stylesheet" href="src/css/loader.css">
     <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/acordeon.css">
-    <link rel="stylesheet" href="src/css/languages.css">
     <link rel="stylesheet" href="src/css/projects.css">
     <link rel="stylesheet" href="src/css/modal.css">
-    <link rel="stylesheet" href="src/css/long-life-learning.css">
     <link rel="stylesheet" href="src/css/skills.css">
-    <link rel="stylesheet" href="src/css/formation.css">
+    <link rel="stylesheet" href="src/css/contact.css">
 
 
 </head>
@@ -87,14 +85,6 @@
                         </div>
                     </div>
                     <div class="header__paragraph">
-                        <i class="bi bi-whatsapp"></i>
-                        <p>
-                            <a href="https://wa.me/16982038845" target="_blank" id="profile-phone">
-                                carregando...
-                            </a>
-                        </p>
-                    </div>
-                    <div class="header__paragraph">
                         <i class="bi bi-envelope"></i>
                         <p>
                             <a href="mailto:danimistron@gmail.com" target="_blank" id="profile-email">
@@ -106,10 +96,10 @@
             </div>
         </header>
 
-        <section class="acordeon">
+        <section class="acordeon open">
             <div class="acordeon__header">
                 <button class="trigger" type="button">
-                    <h2>Skills</h2>
+                    <h2>Skills e Ferramentas</h2>
                 </button>
                 <i class="bi bi-caret-up-fill"></i>
             </div>
@@ -117,26 +107,16 @@
             <div class="content">
                 <div class="skills">
                     <section class="hard-skills">
-                        <h3>Habilidades Profissionais</h3>
-                        <ul class="hard-skills-list" id="profile-hardSkills">
-                            <li class="hard-skills-item">
-                                carregando...
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="soft-skills">
-                        <h3 class="soft-skills__title">Habilidades Pessoais</h3>
-                        <ul class="soft-skills-list" id="profile-softSkills">
-                            <li class="soft-skills-item">carregando...</li>
-                            <li class="soft-skills-item">carregando...</li>
-                            <li class="soft-skills-item">carregando...</li>
-                            <li class="soft-skills-item">carregando...</li>
-                        </ul>
+                        <div class="hard-skills__marquee">
+                            <ul class="hard-skills-list" id="profile-hardSkills">
+                                <li class="hard-skills-item">carregando...</li>
+                            </ul>
+                        </div>
                     </section>
                 </div>
             </div>
         </section>
+
 
         <section class="acordeon open">
             <div class="acordeon__header">
@@ -148,24 +128,7 @@
 
             <div class="content">
                 <ul class="projects">
-                    <!--                    
-                    <li>
-                        <h3 class="projects__title">Clone Spotify - Imersão Front-end Alura 🎵</h3>
-                        <a class="projects__link" href="https://danieleksantos.github.io/Clone-Spotify-Imersao-Front_end_Alura/" target="_blank">Versão online do projeto</a>
-                        <a class="projects__link-repository" href="https://github.com/danieleksantos/Clone-Spotify-Imersao-Front_end_Alura" target="_blank">Repositório no GitHub</a>
-                    </li>
-                    <li>
-                        <h3 class="projects__title">Plataforma de Inscrições com com Links de Referência Personalizados 👥</h3>
-                        <a class="projects__link" href="https://danieleksantos.github.io/Clone-Spotify-Imersao-Front_end_Alura/" target="_blank">Versão online do projeto</a>
-                        <a class="projects__link-repository" href="https://github.com/danieleksantos/Clone-Spotify-Imersao-Front_end_Alura" target="_blank">Repositório no GitHub</a>
-                    </li>
-                    <li>
-                        <h3 class="projects__title">Teclado Virtual com JavaScript</h3>
-                        <a class="projects__link" href="https://danieleksantos.github.io/Projeto-de-Estudo__js-music-keyboard-virtual/" target="_blank">Versão online do projeto</a>
-                        <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-de-Estudo__js-music-keyboard-virtual" target="_blank">Repositório no GitHub</a>
-                    </li>                  
-                     -->
-
+                    
                     <!-- Repo-Wiki React JS -->
                     <li>
                         <div class="projects__container">
@@ -228,8 +191,6 @@
                     </li>
 
                     <!-- Dio Landing Page React JS e React TS -->
-
-
                     <li>
                         <div class="projects__container">
                             <div class="projects__description">
@@ -485,48 +446,7 @@
                             </div>
                         </div>
                     </li>
-                    <!-- Jo-ken-po Yu-gi-oh -->
-                    <!-- <li>
-                        <div class="projects__container reverse">
-                            <div class="projects__description">
-                                <h3 class="projects__title">
-                                    GAME Jo-ken-po versão Yu-gi-oh
-                                </h3>
-                                <img src="src/images/prints-projects/jo-ken-po-yugioh-mockup.png" alt="Projeto game jo-ken-po versão Yu-Gi-Oh">
-                            </div>
-                            
-                            <div class="projects__details">
-                                <p>Jogo interativo inspirado no universo de Yu-Gi-Oh!, combinando a mecânica do clássico Jo-Ken-Po com elementos estratégicos de batalhas de cartas. O projeto simula combates entre dois jogadores, alternando turnos para invocar cartas e realizar ataques, proporcionando uma experiência dinâmica e envolvente. A interface interativa exibe cartas, pontos de vida e resultados das ações em tempo real, tornando o jogo acessível e intuitivo. <br> <span>Tecnologias utilizadas:</span> HTML, CSS e JavaScript, aplicados para estruturar a página, estilizar a interface e implementar a lógica do jogo, garantindo fluidez e interatividade na experiência do usuário.</p>
-                                <a class="projects__link" href="https://danieleksantos.github.io/GAME__Yugioh/" target="_blank">
-                                    Versão online do projeto
-                                </a>
-                                <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-de-Estudo__GAME-Yugioh" target="_blank">
-                                    Repositório no GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </li> -->
-                    <!-- jogo da memoria -->
-                    <!-- <li>
-                        <div class="projects__container">
-                            <div class="projects__description">
-                                <h3 class="projects__title">
-                                    GAME Jogo Da Memória
-                                </h3>
-                                <img src="src/images/prints-projects/jogo-da-memoria-mockup.png" alt="Projeto game jogo da memória">
-                            </div>
-                            
-                            <div class="projects__details">
-                                <p> Jogo da Memória interativo desenvolvido para aprimorar habilidades lógicas e de memorização, com uma interface dinâmica. O projeto foi estruturado aplicando conceitos de manipulação do DOM, eventos JavaScript e estilização personalizada, garantindo uma experiência fluida e envolvente para o usuário. <br> <span>Tecnologias utilizadas:</span> HTML, CSS e JavaScript, com lógica programada para embaralhamento de cartas e verificação de pares.</p>
-                                <a class="projects__link" href="https://danieleksantos.github.io/GAME__Jogo-Da-Memoria/" target="_blank">
-                                    Versão online do projeto
-                                </a>
-                                <a class="projects__link-repository" href="https://github.com/danieleksantos/Projeto-de-Estudo__GAME-JogoDaMemoria" target="_blank">
-                                    Repositório no GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </li> -->
+
                 </ul>
 
                 <div class="all-projects__link">
@@ -537,90 +457,31 @@
             </div>
         </section>
 
-        <!-- <section class="acordeon">
+
+
+        <section class="acordeon open">
             <div class="acordeon__header">
                 <button class="trigger" type="button">
-                    <h2>Formação Acadêmica</h2>
-                </button>
-                <i class="bi bi-caret-up-fill"></i>
-            </div>
-
-            <div class="content formation">
-                <ul id="profile-formation">
-                    <li>carregando...</li>
-                    <li>carregando...</li>
-                </ul>
-            </div>
-        </section> -->
-
-        <section class="acordeon">
-            <div class="acordeon__header">
-                <button class="trigger" type="button">
-                    <h2>Aprendizado contínuo</h2>
+                    <h2>Contato</h2>
                 </button>
                 <i class="bi bi-caret-up-fill"></i>
             </div>
 
             <div class="content">
-                <ul class="long-life-learning">
-                    <li>
-                        <h3>JavaScript Developer / DIO </h3>
-                        <p> Conceitos fundamentais da linguagem, manipulação de DOM, eventos, funções, arrays, objetos e
-                            boas práticas para o desenvolvimento de aplicações web interativas e dinâmicas.</p>
-                    </li>
-                    <li>
-                        <h3>CS50: Introduction to Computer Science / Harvard</h3>
-                        <p> Introdução à ciência da computação, abordando algoritmos, estruturas de dados, programação
-                            em C, Python e desenvolvimento web, com ênfase em resolução de problemas e pensamento
-                            computacional.</p>
-                    </li>
-                    <li>
-                        <h3>CSS Web Developer / DIO</h3>
-                        <p> Estilização de páginas web, layout responsivo, posicionamento de elementos, uso de Flexbox e
-                            Grid, além de técnicas avançadas para design e otimização visual de interfaces.</p>
-                    </li>
-                    <li>
-                        <h3>HTML Web Developer / DIO</h3>
-                        <p> Desenvolvimento de páginas web, abordando estruturação de conteúdo, semântica, formatação e
-                            integração de elementos multimídia, além de práticas para otimização e acessibilidade.</p>
-                    </li>
-                    <li>
-                        <h3>Front-End do Zero (Ri Happy) / DIO</h3>
-                        <p> Formação completa em desenvolvimento Front-End, cobrindo HTML, CSS, JavaScript e fundamentos
-                            de design responsivo, com foco na criação de interfaces de usuário e boas práticas de
-                            desenvolvimento para a web.</p>
-                    </li>
-                    <li>
-                        <h3>GitHub Certification / DIO</h3>
-                        <p> Controle de versão, gerenciamento de repositórios, criação de branches, pull requests e boas
-                            práticas de versionamento para colaboração eficiente em projetos.</p>
-                    </li>
-                    <li>
-                        <h3>Algoritmos / Curso em Vídeo</h3>
-                        <p> Fundamentos da lógica de programação, incluindo variáveis, operadores, estruturas
-                            condicionais e de repetição, utilizando Portugol para desenvolver o raciocínio lógico.</p>
-                    </li>
-                </ul>
+                <section class="contact">
+                    <a href="https://www.linkedin.com/in/danieleksantos/" target="_blank" id="profile-job">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://wa.me/16982038845" target="_blank">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="mailto:danimistron@gmail.com" target="_blank" id="profile-email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </section>
             </div>
         </section>
 
-
-
-        <!-- <section class="acordeon">
-            <div class="acordeon__header">
-                <button class="trigger" type="button">
-                    <h2>Idiomas</h2>
-                </button>
-                <i class="bi bi-caret-up-fill"></i>
-            </div>
-
-            <div class="content">
-                <ul class="languages" id="profile-languages">
-                    <li class="languages-item">carregando...</li>
-                    <li class="languages-item">carregando...</li>
-                </ul>
-            </div>
-        </section> -->
 
 
     </main>
