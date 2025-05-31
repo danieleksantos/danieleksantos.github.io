@@ -17,6 +17,12 @@ align-self: flex-end;
     border-radius: 50%;
 }
 
+.header__information {
+    background: #000;
+    border-radius:1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+
 .header__title {
     font-family: "Playfair Display", serif;    text-align: center;
 }
