@@ -6,18 +6,22 @@
   "phone": "16982038845",
   "email": "danimistron@gmail.com",
   "skills": {
-    "hardSkills": [
-      {
-        "name":"JavaScript",
-        "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/javascript-original.svg"
+  "hardSkills": [
+    {
+      "name":"JavaScript",
+"logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/javascript-original.svg"
       },
       {
         "name":"HTML",
-        "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/html5-original.svg"
+    "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/html5-original.svg"
       },
       {
         "name":"CSS",
-        "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/css3-original.svg"
+    "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/css3-original.svg"
+      },
+      {
+        "name":"TypeScript",
+        "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/refs/heads/main/src/images/typescript.svg"
       },
       {
         "name":"REACT",
@@ -25,15 +29,11 @@
       },
       {
         "name":"GitHub",
-        "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/github-original.svg"
+  "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/github-original.svg"
       },
       {
         "name":"Bootstrap",
-        "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/bootstrap-original.svg"
-      },
-      {
-        "name":"TypeScript",
-        "logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/refs/heads/main/src/images/typescript.svg"
+"logo":"https://raw.githubusercontent.com/danieleksantos/danieleksantos.github.io/3758a35db90a7dc8febe81753099dc977d751a27/src/images/bootstrap-original.svg"
       }
     ],
       "softSkills": [
