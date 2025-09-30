@@ -18,7 +18,7 @@ align-self: flex-end;
 }
 
 .header__information {
-    background: #000;
+    background: linear-gradient(135deg,  rgb(186, 85, 211), rgb(48, 25, 52));      
     border-radius:1rem;
     padding: 0 1rem 1rem 1rem;
 }

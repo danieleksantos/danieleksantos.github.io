@@ -4,9 +4,9 @@
 }
 
 body {
-      /* background: linear-gradient(135deg, rgb(0, 0, 0), rgb(48, 25, 52), rgb(97, 67, 133), rgb(186, 85, 211));  */
-  background-image: url('../images/BG_Portfolio.png');
-  background-size: contain;  
+    background-color: #000;
+  /* background-image: url('../images/BG_Portfolio.png');
+  background-size: contain;   */
 }
 
 main {
