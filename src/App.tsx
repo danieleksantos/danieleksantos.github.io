@@ -1,5 +1,18 @@
-export function App() {
+import Hero from './components/Hero'
+import Skills from './components/Skills'
+import Contact from './components/Contact'
+import Projects from './components/Projects'
+import './App.css'
 
-  return <h1>Start</h1>
+function App() {
+  return (
+    <div className="app">
+      <Hero />
+      <Projects />
+      <Skills />
+      <Contact />
+    </div>
+  )
 }
 
+export default App
