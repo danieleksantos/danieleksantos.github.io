@@ -7,7 +7,7 @@ export interface Project {
   image: string
   github: string
   demo: string
-  featured: boolean
+  featured?: boolean
   category: 'fullstack' | 'frontend' | 'backend'
 }
 
