@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Hotel Hub",
+    "description": "Sistema completo de gestão hoteleira com autenticação JWT e dashboard administrativo.",
+    "longDescription": "Plataforma robusta para administração de redes hoteleiras, focada em adaptabilidade total e performance de alto nível. Inclui reserva de quartos, gestão de hóspedes e relatórios financeiros.",
+    "technologies": ["React", "Node.js", "PostgreSQL", "Docker", "Tailwind"],
+    "image": "/images/hotel-hub-mockup.png",
+    "github": "https://github.com/danieleksantos/hotel-hub",
+    "demo": "https://hotel-hub-seven.vercel.app",
+    "featured": true,
+    "category": "fullstack"
+  },
+  {
+    "id": 2,
+    "title": "DevSocial",
+    "description": "Rede social para desenvolvedores com feed, likes e comentários.",
+    "longDescription": "Plataforma social moderna construída para conectar desenvolvedores em um ecossistema colaborativo, utilizando autenticação segura e banco de dados relacional.",
+    "technologies": ["React", "Express", "PostgreSQL", "JWT", "Zod"],
+    "image": "/images/growTwitter-mockup.png",
+    "github": "https://github.com/danieleksantos/DevSocial",
+    "demo": "https://dev-social-psi.vercel.app",
+    "featured": true,
+    "category": "fullstack"
+  },
+  {
+    "id": 3,
+    "title": "MarkDoc",
+    "description": "Editor Markdown com preview em tempo real e exportação.",
+    "longDescription": "Editor poderoso de documentos Markdown com sistema de templates, renderização imediata e alta performance de processamento de texto.",
+    "technologies": ["React", "TypeScript", "Tailwind", "Markdown"],
+    "image": "/images/buscar-patas-mockup.png",
+    "github": "https://github.com/danieleksantos/MarkDoc",
+    "demo": "https://mark-doc-iota.vercel.app",
+    "featured": true,
+    "category": "frontend"
+  },
+  {
+    "id": 4,
+    "title": "GrowTravel",
+    "description": "Landing page otimizada com 100% no Lighthouse.",
+    "longDescription": "Landing page focada em conversão e performance extrema, atingindo pontuação máxima em acessibilidade e SEO.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/growTravel-mockup.png",
+    "github": "https://github.com/danieleksantos/growtravel",
+    "demo": "https://growtravel-nu.vercel.app",
+    "featured": false,
+    "category": "frontend"
+  },
+  {
+    "id": 5,
+    "title": "Nikel",
+    "description": "Controle financeiro pessoal com gestão de receitas e despesas.",
+    "longDescription": "Aplicação intuitiva para organização financeira doméstica, permitindo o acompanhamento detalhado de entradas e saídas.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "image": "/images/nikel-mockup.png",
+    "github": "https://github.com/danieleksantos/Nikel-Controle-Financeiro",
+    "demo": "https://danieleksantos.github.io/Nikel-Controle-Financeiro/",
+    "featured": false,
+    "category": "frontend"
+  }
+]
