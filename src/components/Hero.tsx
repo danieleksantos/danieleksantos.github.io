@@ -1,4 +1,5 @@
-import { MapPin, Circle, ChevronDown } from 'lucide-react'
+import { MapPin, ChevronDown } from 'lucide-react'
+import VSCodeWindow from './VSCodeWindow'
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -6,141 +7,166 @@ const Hero = () => {
   }
 
   return (
-    <section className="flex items-center justify-center px-6 pt-20 pb-10 bg-gradient-to-br from-purple-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-950 dark:to-purple-900/20 transition-colors duration-500">
+    <section className="flex items-center justify-center px-6 pt-20 pb-10 bg-white dark:bg-gray-950 transition-colors duration-500 min-h-screen overflow-hidden">
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-slide-up">
-            <p className="text-sm font-bold text-purple-600 dark:text-purple-400 mb-2 tracking-widest uppercase">
-              Olá, eu sou
-            </p>
+          <div className="space-y-6">
+            <header>
+              <h1 className="text-5xl md:text-6xl font-black text-gray-900 dark:text-white tracking-tighter leading-tight">
+                Daniele K Santos<span className="text-purple-600">.</span>
+              </h1>
+              <h2 className="text-xl font-bold text-gray-400 dark:text-gray-500 mt-2 tracking-tight">
+                Desenvolvedora FullStack{' '}
+                <span className="font-light">| Foco em Front-End</span>
+              </h2>
+            </header>
 
-            <h1 className="text-5xl md:text-6xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-              Daniele K Santos
-              <span className="inline-block w-1 h-12 md:h-16 bg-purple-600 dark:bg-purple-400 ml-2 animate-pulse" />
-            </h1>
-
-            <h2 className="text-2xl md:text-2xl font-semibold text-gray-600 dark:text-gray-300 mb-6">
-              Desenvolvedora Web - Frontend
-            </h2>
-
-            <div className="flex flex-wrap gap-4 mb-10 pt-6">
+            <div className="flex flex-wrap gap-4 pt-2">
               <button
                 onClick={scrollToProjects}
-                className="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-lg shadow-lg shadow-purple-500/20 transition-all duration-300 hover:scale-105 cursor-pointer"
+                className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-black rounded-2xl shadow-xl shadow-purple-500/20 transition-all active:scale-95 text-sm uppercase tracking-widest cursor-pointer"
               >
-                Ver Projetos
+                Projetos
               </button>
               <a
                 href="#contact"
-                className="px-8 py-3 bg-white dark:bg-gray-800 text-purple-600 dark:text-purple-400 font-bold rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-purple-600 dark:border-purple-400/50"
+                className="px-8 py-4 border-2 border-purple-200 dark:border-gray-600 text-purple-600 dark:text-white font-black rounded-2xl bg-gray-200 dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition-all text-sm uppercase tracking-widest"
               >
                 Contato
               </a>
             </div>
 
-            <div className="flex flex-wrap gap-6">
-              <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors cursor-default">
-                <MapPin className="w-5 h-5" />
-                <span className="font-medium">Piracicaba, SP</span>
+            <div className="flex flex-col gap-3 border-t border-gray-100 dark:border-gray-900 pt-6">
+              <div className="flex items-center gap-3 text-sm text-gray-500 italic">
+                <MapPin size={16} className="text-purple-500" />
+                Piracicaba, São Paulo
               </div>
-              <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                <Circle className="w-2 h-2 fill-green-500 text-green-500 animate-pulse" />
-                <span className="text-sm font-medium">
-                  Disponível para projetos
+              <div className="flex items-center gap-3">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+                <span className="text-xs font-bold text-gray-700 dark:text-gray-300">
+                  Disponível para novos desafios
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="animate-fade-in relative">
-            <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-20 dark:opacity-40 group-hover:opacity-100 transition duration-1000"></div>
-
-            <div className="relative bg-white dark:bg-gray-900 rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-800 overflow-hidden">
-              <div className="flex items-center justify-between px-4 py-3 bg-gray-50/50 dark:bg-gray-800/50 border-b border-gray-200 dark:border-gray-800">
-                <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-green-500/80" />
-                </div>
-                <span className="text-xs font-mono text-gray-400">
-                  developer.ts
-                </span>
-              </div>
-
-              <div className="p-8 font-mono text-sm sm:text-base leading-relaxed">
-                <div className="space-y-1">
-                  <p>
-                    <span className="text-pink-500 dark:text-pink-400 italic pr-2">
-                      const
-                    </span>
-                    <span className="text-blue-600 dark:text-blue-400 font-semibold pr-2">
-                      developer
-                    </span>
-                    <span className="text-gray-400 pr-1">=</span>
-                    <span className="text-gray-400">{'{'}</span>
-                  </p>
-
-                  <div className="pl-6 space-y-1 border-l border-gray-100 dark:border-gray-800 ml-1">
+          <div className="h-[380px] w-full flex items-center justify-center">
+            <div className="h-full w-full animate-none lg:animate-hero-spin will-change-transform">
+              <div className="h-full w-full rounded-xl shadow-2xl shadow-gray-300/40 dark:shadow-neon transition-shadow duration-500 overflow-hidden">
+                <VSCodeWindow fileName="App.tsx">
+                  <div className="h-full overflow-y-auto pr-2 space-y-1 select-text cursor-text font-mono text-[13px] md:text-[14px] leading-relaxed custom-scrollbar">
                     <p>
-                      <span className="text-blue-500 dark:text-blue-400">
-                        name:
-                      </span>
-                      <span className="text-green-600 dark:text-green-400">
-                        'Daniele K Santos'
-                      </span>
-                      ,
+                      <span className="text-[#569cd6]">interface</span>{' '}
+                      <span className="text-[#4ec9b0]">Developer</span> {'{'}
                     </p>
+                    <div className="pl-6 space-y-1 text-[#9cdcfe]">
+                      <p>
+                        name: <span className="text-[#4ec9b0]">string</span>;
+                      </p>
+                      <p>
+                        role: <span className="text-[#4ec9b0]">string</span>;
+                      </p>
+                      <p>
+                        primaryFocus:{' '}
+                        <span className="text-[#4ec9b0]">string</span>;
+                      </p>
+                      <p>
+                        stack: <span className="text-[#4ec9b0]">string</span>[];
+                      </p>
+                      <p>
+                        principles:{' '}
+                        <span className="text-[#4ec9b0]">string</span>[];
+                      </p>
+                      <p>
+                        accessibilityFirst:{' '}
+                        <span className="text-[#4ec9b0]">boolean</span>;
+                      </p>
+                      <p>
+                        growthMindset:{' '}
+                        <span className="text-[#4ec9b0]">boolean</span>;
+                      </p>
+                      <p>
+                        goal: <span className="text-[#4ec9b0]">string</span>;
+                      </p>
+                    </div>
+                    <p>{'}'}</p>
+                    <br />
                     <p>
-                      <span className="text-blue-500 dark:text-blue-400">
-                        role:
-                      </span>
-                      <span className="text-green-600 dark:text-green-400">
-                        'Desenvolvedora Web'
-                      </span>
-                      ,
+                      <span className="text-[#569cd6]">const</span>{' '}
+                      <span className="text-[#9cdcfe]">portfolio</span>:{' '}
+                      <span className="text-[#4ec9b0]">Developer</span> = {'{'}
                     </p>
-                    <p>
-                      <span className="text-blue-500 dark:text-blue-400">
-                        tech:
-                      </span>
-                      <span className="text-gray-400">[</span>
-                      <span className="text-orange-500 dark:text-orange-400">
-                        'React.js'
-                      </span>
-                      ,
-                      <span className="text-orange-500 dark:text-orange-400">
-                        'Node.js'
-                      </span>
-                      ,
-                      <span className="text-orange-500 dark:text-orange-400">
-                        'Typescript'
-                      </span>
-                      <span className="text-gray-400">]</span>,
-                    </p>
-                    <p>
-                      <span className="text-blue-500 dark:text-blue-400">
-                        cleanCode:
-                      </span>
-                      <span className="text-pink-500 dark:text-pink-400">
-                        true
-                      </span>
-                    </p>
+                    <div className="pl-6 space-y-1">
+                      <p>
+                        <span className="text-[#9cdcfe]">name</span>:{' '}
+                        <span className="text-[#ce9178]">
+                          "Daniele K. Santos"
+                        </span>
+                        ,
+                      </p>
+                      <p>
+                        <span className="text-[#9cdcfe]">role</span>:{' '}
+                        <span className="text-[#ce9178]">
+                          "Fullstack Developer"
+                        </span>
+                        ,
+                      </p>
+                      <p>
+                        <span className="text-[#9cdcfe]">primaryFocus</span>:{' '}
+                        <span className="text-[#ce9178]">
+                          "Front-End Engineering"
+                        </span>
+                        ,
+                      </p>
+                      <p>
+                        <span className="text-[#9cdcfe]">stack</span>: [
+                        <span className="text-[#ce9178]">"React"</span>,{' '}
+                        <span className="text-[#ce9178]">"TypeScript"</span>,{' '}
+                        <span className="text-[#ce9178]">"Node.js"</span>],
+                      </p>
+                      <p>
+                        <span className="text-[#9cdcfe]">principles</span>: [
+                        <span className="text-[#ce9178]">"Clean Code"</span>,{' '}
+                        <span className="text-[#ce9178]">"SOLID"</span>,{' '}
+                        <span className="text-[#ce9178]">"a11y"</span>],
+                      </p>
+                      <p>
+                        <span className="text-[#9cdcfe]">
+                          accessibilityFirst
+                        </span>
+                        : <span className="text-[#569cd6]">true</span>,
+                      </p>
+                      <p>
+                        <span className="text-[#9cdcfe]">growthMindset</span>:{' '}
+                        <span className="text-[#569cd6]">true</span>,
+                      </p>
+                      <p>
+                        <span className="text-[#9cdcfe]">goal</span>:{' '}
+                        <span className="text-[#ce9178]">
+                          "Building accessible, scalable, and user-centered web
+                          applications."
+                        </span>
+                      </p>
+                    </div>
+                    <p>{'}'};</p>
                   </div>
-
-                  <p className="text-gray-400">{'}'}</p>
-                </div>
+                </VSCodeWindow>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center mt-16 animate-bounce">
+        {/* Indicador de Scroll */}
+        <div className="flex justify-center mt-12 animate-bounce">
           <button
             onClick={scrollToProjects}
-            aria-label="Rolar para baixo"
-            className="text-purple-600 dark:text-purple-400 hover:text-purple-700 transition-colors"
+            className="text-gray-300 dark:text-gray-700 hover:text-purple-500 transition-colors cursor-pointer"
+            aria-label="Rolar para projetos"
           >
-            <ChevronDown className="w-8 h-8" />
+            <ChevronDown size={32} />
           </button>
         </div>
       </div>

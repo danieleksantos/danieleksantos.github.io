@@ -16,7 +16,7 @@ const ThemeToggle = () => {
       className="fixed top-6 right-6 z-50 p-3 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-md 
                  shadow-lg border border-gray-200 dark:border-gray-700
                  hover:scale-110 active:scale-95 transition-all duration-300
-                 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+                 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 cursor-pointer"
       aria-label={
         theme === 'light' ? 'Ativar modo escuro' : 'Ativar modo claro'
       }

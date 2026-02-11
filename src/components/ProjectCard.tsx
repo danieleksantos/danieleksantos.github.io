@@ -43,7 +43,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
   return (
     <article className="group flex flex-col h-full rounded-3xl overflow-hidden bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 hover:border-purple-500/50 transition-all duration-500 shadow-sm hover:shadow-xl hover:shadow-purple-500/10">
-      {/* Container da Imagem com Badge */}
       <div className="relative aspect-video overflow-hidden bg-gray-100 dark:bg-gray-900">
         <img
           src={project.image}
@@ -52,7 +51,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           loading="lazy"
         />
 
-        {/* Badge de Categoria Posicionado */}
         <div className="absolute top-4 right-4 z-10">
           <span
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest backdrop-blur-md border shadow-sm transition-all duration-500 ${config.styles}`}
@@ -76,7 +74,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           {project.description}
         </p>
 
-        {/* Tags de Tecnologia */}
         <div className="flex flex-wrap gap-1.5 mb-8 mt-auto">
           {project.technologies.map((tech) => (
             <span
@@ -88,7 +85,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           ))}
         </div>
 
-        {/* Botões */}
         <div className="flex items-center gap-3">
           <a
             href={project.demo}
