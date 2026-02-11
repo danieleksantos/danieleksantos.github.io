@@ -156,7 +156,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Indicador de Scroll */}
         <div className="flex justify-center mt-12 animate-bounce">
           <button
             onClick={scrollToProjects}

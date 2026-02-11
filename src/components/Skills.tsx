@@ -6,36 +6,46 @@ interface Skill {
 interface SkillCategory {
   title: string
   skills: Skill[]
+  isPrimary?: boolean
 }
 
 const Skills = () => {
   const skillCategories: SkillCategory[] = [
     {
-      title: 'Frontend',
+      title: 'Primary Stack',
+      isPrimary: true,
       skills: [
         { name: 'React', icon: 'react' },
-        { name: 'Next.js', icon: 'nextdotjs' },
         { name: 'TypeScript', icon: 'typescript' },
-        { name: 'Tailwind CSS', icon: 'tailwindcss' },
-        { name: 'Material UI', icon: 'mui' },
-        { name: 'Bootstrap', icon: 'bootstrap' },
-        { name: 'JavaScript', icon: 'javascript' },
+        { name: 'Node.js', icon: 'nodedotjs' },
+        { name: 'PostgreSQL', icon: 'postgresql' },
       ],
     },
     {
-      title: 'Backend & DB',
+      title: 'Frontend',
       skills: [
-        { name: 'Node.js', icon: 'nodedotjs' },
-        { name: 'Express', icon: 'express' },
-        { name: 'PostgreSQL', icon: 'postgresql' },
-        { name: 'MongoDB', icon: 'mongodb' },
-        { name: 'SQL', icon: 'sqlite' },
-        { name: 'Prisma', icon: 'prisma' },
+        { name: 'Next.js', icon: 'nextdotjs' },
+        { name: 'JavaScript', icon: 'javascript' },
+        { name: 'Tailwind CSS', icon: 'tailwindcss' },
+        { name: 'Material UI', icon: 'mui' },
+        { name: 'Bootstrap', icon: 'bootstrap' },
         { name: 'Axios', icon: 'axios' },
       ],
     },
     {
-      title: 'DevOps & Cloud',
+      title: 'Backend & API',
+      skills: [
+        { name: 'Express', icon: 'express' },
+        { name: 'Prisma', icon: 'prisma' },
+        { name: 'Zod', icon: 'zod' },
+        { name: 'Swagger', icon: 'swagger' },
+        { name: 'PostgreSQL', icon: 'postgresql' },
+        { name: 'MongoDB', icon: 'mongodb' },
+        { name: 'SQL', icon: 'sqlite' },
+      ],
+    },
+    {
+      title: 'Tools & Code Quality',
       skills: [
         { name: 'Docker', icon: 'docker' },
         { name: 'Git', icon: 'git' },
@@ -43,6 +53,8 @@ const Skills = () => {
         { name: 'Vercel', icon: 'vercel' },
         { name: 'Render', icon: 'render' },
         { name: 'Vite', icon: 'vite' },
+        { name: 'ESLint', icon: 'eslint' },
+        { name: 'Prettier', icon: 'prettier' },
       ],
     },
   ]
@@ -50,40 +62,52 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-15 px-4 bg-white dark:bg-gray-950 transition-colors duration-500"
+      className="py-12 px-6 bg-white dark:bg-gray-950 transition-colors duration-500"
     >
       <div className="max-w-6xl mx-auto">
-        <header className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight">
-            Minha{' '}
-            <span className="text-purple-600 dark:text-purple-400">Stack</span>
+        <header className="mb-20">
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-4 tracking-tighter">
+            Stack <span className="text-purple-600">&</span> Tecnologias.
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto text-balance font-medium">
-            Ferramentas e tecnologias que utilizo para transformar ideias em
-            produtos digitais de alta performance.
-          </p>
         </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="space-y-12">
           {skillCategories.map((category) => (
-            <div key={category.title} className="flex flex-col">
-              <h3 className="text-sm font-black uppercase tracking-[0.2em] text-purple-600 dark:text-purple-400 mb-8 flex items-center gap-3">
-                <span className="w-8 h-[2px] bg-purple-600/30" />
+            <div key={category.title}>
+              <h3
+                className={`font-black uppercase tracking-[0.3em] mb-6 ${
+                  category.isPrimary
+                    ? 'text-purple-600 text-xs'
+                    : 'text-gray-400 text-[10px]'
+                }`}
+              >
                 {category.title}
               </h3>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-x-3 gap-y-2 md:gap-x-20">
                 {category.skills.map((skill) => (
                   <div
-                    key={skill.name}
-                    className="group relative flex items-center gap-3 px-4 py-2.5 rounded-2xl bg-gray-50 dark:bg-gray-900/50 border border-gray-100 dark:border-gray-800 hover:border-purple-500/50 bg-gray-200 hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-500/10"
+                    key={`${category.title}-${skill.name}`}
+                    className="group flex items-center gap-3 transition-all duration-300 hover:-translate-y-1"
                   >
                     <img
                       src={`https://cdn.simpleicons.org/${skill.icon}`}
                       alt=""
-                      className="w-5 h-5 opacity-40 group-hover:opacity-100 transition-all duration-500 grayscale group-hover:grayscale-0"
+                      className={`
+                        transition-all duration-500 grayscale group-hover:grayscale-0 opacity-40 group-hover:opacity-100
+                        ${category.isPrimary ? 'w-8 h-8' : 'w-5 h-5'}
+                      `}
                     />
-                    <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
+                    <span
+                      className={`
+                      font-bold tracking-tight transition-colors
+                      ${
+                        category.isPrimary
+                          ? 'text-xl text-gray-900 dark:text-white'
+                          : 'text-sm text-gray-500 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white'
+                      }
+                    `}
+                    >
                       {skill.name}
                     </span>
                   </div>

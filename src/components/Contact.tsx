@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-24 px-6 bg-white dark:bg-gray-950 transition-colors duration-500"
+      className="py-12 px-6 bg-white dark:bg-gray-950 transition-colors duration-500"
     >
       <div className="max-w-4xl mx-auto">
         <header className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
@@ -42,7 +42,6 @@ const Contact = () => {
           </p>
         </header>
 
-        {/* Layout sem cards, apenas itens alinhados */}
         <div className="flex flex-wrap items-center justify-start gap-12 md:gap-20">
           {socialLinks.map((link) => (
             <a
@@ -53,7 +52,6 @@ const Contact = () => {
               aria-label={`Ir para ${link.label}`}
               className={`group flex items-center gap-3 text-gray-400 transition-all duration-300 ease-in-out hover:-translate-y-1 ${link.hoverColor}`}
             >
-              {/* O ícone e o texto agora respiram juntos no mesmo nível */}
               <div className="transition-transform duration-300 group-hover:scale-110">
                 {link.icon}
               </div>
