@@ -22,10 +22,9 @@
 
 @variant dark (&:where(.dark, .dark *));
 
-/* Custom Scrollbar com correção de Cursor */
 .custom-scrollbar::-webkit-scrollbar {
-  width: 8px;
-  cursor: default; /* Força o cursor padrão na área da barra */
+  width: 10px;
+  cursor: default; 
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {

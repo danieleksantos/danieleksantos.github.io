@@ -30,7 +30,7 @@ const Hero = () => {
               </button>
               <a
                 href="#contact"
-                className="px-8 py-4 border-2 border-purple-200 dark:border-gray-600 text-purple-600 dark:text-white font-black rounded-2xl bg-gray-200 dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition-all text-sm uppercase tracking-widest"
+                className="px-8 py-4 border-1 border-purple-200 dark:border-purple-600 text-purple-600 dark:text-white font-black rounded-2xl bg-gray-200 dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition-all text-sm uppercase tracking-widest"
               >
                 Contato
               </a>
@@ -57,12 +57,12 @@ const Hero = () => {
             <div className="h-full w-full animate-none lg:animate-hero-spin will-change-transform">
               <div className="h-full w-full rounded-xl shadow-2xl shadow-gray-300/40 dark:shadow-neon transition-shadow duration-500 overflow-hidden">
                 <VSCodeWindow fileName="App.tsx">
-                  <div className="h-full overflow-y-auto pr-2 space-y-1 select-text cursor-text font-mono text-[13px] md:text-[14px] leading-relaxed custom-scrollbar">
+                  <div className="h-full overflow-y-auto pr-2 font-mono text-[12px] md:text-[13px] leading-relaxed custom-scrollbar">
                     <p>
                       <span className="text-[#569cd6]">interface</span>{' '}
                       <span className="text-[#4ec9b0]">Developer</span> {'{'}
                     </p>
-                    <div className="pl-6 space-y-1 text-[#9cdcfe]">
+                    <div className="pl-6 text-[#9cdcfe]">
                       <p>
                         name: <span className="text-[#4ec9b0]">string</span>;
                       </p>
@@ -116,10 +116,7 @@ const Hero = () => {
                       </p>
                       <p>
                         <span className="text-[#9cdcfe]">primaryFocus</span>:{' '}
-                        <span className="text-[#ce9178]">
-                          "Front-End Engineering"
-                        </span>
-                        ,
+                        <span className="text-[#ce9178]">"Front-End"</span>,
                       </p>
                       <p>
                         <span className="text-[#9cdcfe]">stack</span>: [
@@ -131,7 +128,7 @@ const Hero = () => {
                         <span className="text-[#9cdcfe]">principles</span>: [
                         <span className="text-[#ce9178]">"Clean Code"</span>,{' '}
                         <span className="text-[#ce9178]">"SOLID"</span>,{' '}
-                        <span className="text-[#ce9178]">"a11y"</span>],
+                        <span className="text-[#ce9178]">"A11y"</span>],
                       </p>
                       <p>
                         <span className="text-[#9cdcfe]">

@@ -102,7 +102,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Ver código fonte do projeto ${project.title} no GitHub`}
-            className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-gray-200 dark:bg-gray-700 hover:bg-purple-50 dark:hover:bg-gray-600 text-purple-600 dark:text-white border border-purple-200 dark:border-gray-600 rounded-xl text-xs font-bold transition-all active:scale-95 shadow-sm uppercase tracking-wider"
+            className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-gray-200 dark:bg-gray-700 hover:bg-purple-50 dark:hover:bg-gray-600 text-purple-600 dark:text-white border border-purple-200 dark:border-purple-600 rounded-xl text-xs font-bold transition-all active:scale-95 shadow-sm uppercase tracking-wider"
           >
             <Github className="w-4 h-4" />
             <span>Github</span>

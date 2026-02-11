@@ -53,7 +53,7 @@ const Projects = () => {
             <button
               onClick={() => paginate(currentPage - 1)}
               disabled={currentPage === 1}
-              className="px-4 py-2 rounded-lg border border-purple-200 dark:border-gray-700 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-purple-50 dark:hover:bg-gray-800 transition-colors text-purple-600 dark:text-purple-400 font-bold text-xs uppercase tracking-widest cursor-pointer"
+              className="px-4 py-2 rounded-lg border border-purple-200 dark:border-purple-600 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-purple-50 dark:hover:bg-gray-800 transition-colors text-purple-600 dark:text-purple-400 font-bold text-xs uppercase tracking-widest cursor-pointer"
             >
               Anterior
             </button>
@@ -80,7 +80,7 @@ const Projects = () => {
             <button
               onClick={() => paginate(currentPage + 1)}
               disabled={currentPage === totalPages}
-              className="px-4 py-2 rounded-lg border border-purple-200 dark:border-gray-700 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-purple-50 dark:hover:bg-gray-800 transition-colors text-purple-600 dark:text-purple-400 font-bold text-xs uppercase tracking-widest cursor-pointer"
+              className="px-4 py-2 rounded-lg border border-purple-200 dark:border-purple-600 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-purple-50 dark:hover:bg-gray-800 transition-colors text-purple-600 dark:text-purple-400 font-bold text-xs uppercase tracking-widest cursor-pointer"
             >
               Próximo
             </button>
