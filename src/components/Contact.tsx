@@ -18,7 +18,7 @@ const Contact = () => {
       icon: <Github className="w-6 h-6" />,
       label: 'GitHub',
       href: 'https://github.com/danieleksantos',
-      hoverColor: 'hover:text-purple-600 dark:hover:text-white',
+      hoverColor: 'hover:text-gray-900 dark:hover:text-white',
     },
   ]
 

@@ -1,14 +1,15 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react' // Adicionado useEffect e useRef
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import projectsDataRaw from '../data/projects.json'
 import ProjectCard from './ProjectCard'
 import type { Project } from '../types'
 
 const projectsData = projectsDataRaw as Project[]
-
-const PROJECTS_PER_PAGE = 6
+const PROJECTS_PER_PAGE = 3
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1)
+  const sectionRef = useRef<HTMLElement>(null) // Referência para a section
 
   const totalPages = Math.ceil(projectsData.length / PROJECTS_PER_PAGE)
   const indexOfLastProject = currentPage * PROJECTS_PER_PAGE
@@ -19,59 +20,66 @@ const Projects = () => {
     indexOfLastProject,
   )
 
+  // useEffect que observa a mudança da página
+  useEffect(() => {
+    // Se não for a primeira carga da página, rola para o topo da seção
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [currentPage]) // Executa sempre que currentPage mudar
+
   const paginate = (pageNumber: number) => {
     setCurrentPage(pageNumber)
-    const section = document.getElementById('projects')
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' })
-    }
+    // Removido o scroll daqui, pois o useEffect cuidará disso
   }
 
   return (
     <section
       id="projects"
-      className="py-15 bg-gray-50/50 dark:bg-gray-900/50 transition-colors duration-500"
+      ref={sectionRef} // Atribuindo a referência aqui
+      className="py-14 bg-white dark:bg-gray-950 transition-colors duration-500"
     >
-      <div className="container mx-auto px-4">
-        <header className="mb-12 text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 tracking-tight mb-4">
-            Projetos
+      <div className="max-w-6xl mx-auto px-6">
+        <header className="mb-24">
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-4 tracking-tighter">
+            Projetos<span className="text-purple-600">.</span>
           </h2>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {currentProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+        <div className="flex flex-col gap-24 md:gap-32">
+          {currentProjects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
 
         {totalPages > 1 && (
           <nav
-            className="flex justify-center items-center gap-2 mt-16"
+            className="flex justify-center items-center gap-1 sm:gap-2 mt-32"
             aria-label="Navegação de projetos"
           >
             <button
               onClick={() => paginate(currentPage - 1)}
               disabled={currentPage === 1}
-              className="px-4 py-2 rounded-lg border border-purple-200 dark:border-purple-600 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-purple-50 dark:hover:bg-gray-800 transition-colors text-purple-600 dark:text-purple-400 font-bold text-xs uppercase tracking-widest cursor-pointer"
+              className="flex items-center gap-1 px-3 sm:px-5 py-2.5 rounded-xl disabled:opacity-20 disabled:cursor-not-allowed transition-all font-black text-[10px] uppercase tracking-[0.2em] cursor-pointer bg-gray-100/50 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-purple-200 hover:border-purple-600 dark:border-purple-400 dark:hover:border-purple-700  text-purple-600 dark:text-white font-black"
             >
-              Anterior
+              <ChevronLeft size={14} />
+              <span className="hidden sm:block">Anterior</span>
             </button>
 
-            <div className="flex gap-1 mx-2">
+            <div className="flex gap-1 sm:gap-2 mx-1 sm:mx-4">
               {Array.from({ length: totalPages }, (_, i) => i + 1).map(
                 (pageNum) => (
                   <button
                     key={pageNum}
                     onClick={() => paginate(pageNum)}
                     aria-current={currentPage === pageNum ? 'page' : undefined}
-                    className={`w-10 h-10 rounded-xl font-bold transition-all duration-300 cursor-pointer ${
+                    className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl font-black text-xs transition-all duration-300 cursor-pointer ${
                       currentPage === pageNum
-                        ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/30'
-                        : 'text-gray-500 hover:bg-purple-50 dark:hover:bg-gray-800'
+                        ? 'bg-purple-600 text-white shadow-lg shadow-purple-500/30 border-none'
+                        : 'bg-gray-100/50 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-purple-200 hover:border-purple-600 dark:border-purple-400 dark:hover:border-purple-700 text-purple-600 dark:text-white font-black'
                     }`}
                   >
-                    {pageNum}
+                    {String(pageNum).padStart(2, '0')}
                   </button>
                 ),
               )}
@@ -80,9 +88,10 @@ const Projects = () => {
             <button
               onClick={() => paginate(currentPage + 1)}
               disabled={currentPage === totalPages}
-              className="px-4 py-2 rounded-lg border border-purple-200 dark:border-purple-600 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-purple-50 dark:hover:bg-gray-800 transition-colors text-purple-600 dark:text-purple-400 font-bold text-xs uppercase tracking-widest cursor-pointer"
+              className="flex items-center gap-1 px-3 sm:px-5 py-2.5 rounded-xl disabled:opacity-20 disabled:cursor-not-allowed transition-all text-[10px] uppercase tracking-[0.2em] cursor-pointer bg-gray-100/50 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-purple-200 hover:border-purple-600 dark:border-purple-400 dark:hover:border-purple-700  text-purple-600 dark:text-white font-black"
             >
-              Próximo
+              <span className="hidden sm:block">Próximo</span>
+              <ChevronRight size={14} />
             </button>
           </nav>
         )}

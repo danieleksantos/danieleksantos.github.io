@@ -1,9 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Hotel Hub",
-    "description": "Sistema completo de gestão hoteleira com autenticação JWT e dashboard administrativo para controle de reservas e hóspedes.",
-    "longDescription": "Plataforma robusta para administração de redes hoteleiras, focada em adaptabilidade total e performance. Inclui Docker, PostgreSQL e arquitetura escalável.",
+    "title": "Hotel Hub - Sistema de Gestão Hoteleira",
+    "description": "Sistema completo de gestão hoteleira com autenticação JWT e dashboard administrativo. Plataforma robusta focada em adaptabilidade e performance, utilizando Docker e PostgreSQL.",
     "technologies": ["React", "Node.js", "PostgreSQL", "Docker", "Tailwind", "JWT"],
     "image": "/images/hotel-hub-mockup.png",
     "github": "https://github.com/danieleksantos/hotel-hub",
@@ -13,8 +12,7 @@
   {
     "id": 2,
     "title": "GrowTwitter",
-    "description": "Rede social com feed global, trends, paginação e sistema de follow. Focada em Clean Code e Service Pattern.",
-    "longDescription": "API RESTful escalável com arquitetura em camadas e frontend responsivo com suporte a temas Dark/Light.",
+    "description": "Rede social com feed global, trends e sistema de follow. API RESTful escalável construída com Service Pattern, arquitetura em camadas e suporte a temas Dark/Light.",
     "technologies": ["React", "TypeScript", "Node.js", "Prisma", "PostgreSQL", "Redux"],
     "image": "/images/growTwitter-mockup.png",
     "github": "https://github.com/danieleksantos/grow-twitter",
@@ -24,8 +22,7 @@
   {
     "id": 3,
     "title": "Buscar Patas",
-    "description": "Sistema de adoção de pets com painel administrativo e dashboard de métricas para gerenciamento de adoções.",
-    "longDescription": "Aplicação moderna que facilita a conexão entre pets e adotantes, utilizando Prisma ORM e autenticação segura.",
+    "description": "Sistema de adoção de pets com painel administrativo e métricas de gerenciamento. Aplicação moderna que conecta pets e adotantes utilizando Prisma ORM e autenticação segura.",
     "technologies": ["React", "Node.js", "Prisma", "PostgreSQL", "Bootstrap", "JWT"],
     "image": "/images/buscar-patas-mockup.png",
     "github": "https://github.com/danieleksantos/BuscarPatas-sistema-de-adocao-de-pets",
@@ -35,8 +32,7 @@
   {
     "id": 4,
     "title": "GrowBot",
-    "description": "Assistente virtual inteligente que utiliza IA para guiar iniciantes no mercado de tecnologia.",
-    "longDescription": "Chat interativo integrado com a API do Google Gemini para fornecer insights de carreira e estudos.",
+    "description": "Assistente virtual inteligente que utiliza IA para guiar iniciantes em tecnologia. Chat interativo integrado com Google Gemini API para fornecer insights de carreira.",
     "technologies": ["React", "TypeScript", "Node.js", "Express", "Gemini AI", "MongoDB"],
     "image": "/images/growBot-mockup.png",
     "github": "https://github.com/danieleksantos/GrowBot",
@@ -46,8 +42,7 @@
   {
     "id": 5,
     "title": "Catálogo de Produtos",
-    "description": "E-commerce funcional com filtragem dinâmica, favoritos com limite por categoria e Context API.",
-    "longDescription": "Aplicação com gerenciamento de estado centralizado, paginação e estilização seguindo metodologia BEM.",
+    "description": "E-commerce funcional com filtragem dinâmica e favoritos por categoria. Gerenciamento de estado via Context API e estilização seguindo a metodologia BEM.",
     "technologies": ["React", "TypeScript", "Context API", "CSS Modules"],
     "image": "/images/catalogo-de-produtos-mockup.png",
     "github": "https://github.com/danieleksantos/catalogo-de-produtos",
@@ -57,8 +52,7 @@
   {
     "id": 6,
     "title": "A Casa do Ney",
-    "description": "Landing page institucional para ONG de apoio a crianças com deficiência, focada em presença digital.",
-    "longDescription": "Projeto voluntário desenvolvido para atrair apoiadores, utilizando componentes modernos e responsivos.",
+    "description": "Landing page institucional para ONG de apoio a crianças com deficiência. Projeto voluntário focado em presença digital, com componentes modernos e responsivos.",
     "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript"],
     "image": "/images/a-casa-do-ney-mockup.png",
     "github": "https://github.com/danieleksantos/ong-a-casa-do-ney",
@@ -68,8 +62,7 @@
   {
     "id": 7,
     "title": "Repo-Wikis",
-    "description": "Explorador de repositórios do GitHub consumindo API oficial para listagem interativa de projetos.",
-    "longDescription": "Interface prática para busca de usuários e repositórios, focada em manipulação de APIs REST.",
+    "description": "Explorador de repositórios do GitHub consumindo API oficial. Interface interativa para busca de usuários e repositórios, focada em manipulação de APIs REST.",
     "technologies": ["React", "JavaScript", "Styled Components", "GitHub API"],
     "image": "/images/repo-wiki-mockup.png",
     "github": "https://github.com/danieleksantos/Repo-Wikis.git",
@@ -79,8 +72,7 @@
   {
     "id": 8,
     "title": "GrowTravel",
-    "description": "Landing page de agência de turismo com performance extrema e 100% de pontuação no Lighthouse.",
-    "longDescription": "Foco total em SEO, acessibilidade e boas práticas de desenvolvimento web moderno.",
+    "description": "Landing page de agência de turismo com performance extrema. Foco total em SEO, acessibilidade e boas práticas, atingindo 100% de pontuação no Lighthouse.",
     "technologies": ["HTML", "CSS", "Lighthouse", "SEO"],
     "image": "/images/growTravel-mockup.png",
     "github": "https://github.com/danieleksantos/growtravel.git",
@@ -90,8 +82,7 @@
   {
     "id": 9,
     "title": "Nikel",
-    "description": "Aplicação de controle financeiro pessoal para gestão de receitas, despesas e investimentos.",
-    "longDescription": "Ferramenta intuitiva para organização doméstica com armazenamento local e interface limpa.",
+    "description": "Aplicação de controle financeiro pessoal para gestão de receitas e despesas. Ferramenta intuitiva com armazenamento local e interface limpa para organização doméstica.",
     "technologies": ["HTML", "CSS", "JavaScript"],
     "image": "/images/nikel-mockup.png",
     "github": "https://github.com/danieleksantos/Nikel-Controle-Financeiro.git",
@@ -101,8 +92,7 @@
   {
     "id": 10,
     "title": "Coffee Shop",
-    "description": "Landing page responsiva para cafeteria com design personalizado e foco em usabilidade.",
-    "longDescription": "Interface visual agradável estruturada com princípios de design flexível e acessibilidade.",
+    "description": "Landing page responsiva para cafeteria com design personalizado. Interface visual agradável estruturada com princípios de design flexível e acessibilidade.",
     "technologies": ["HTML", "CSS", "Bootstrap"],
     "image": "/images/coffee-shop-cell-mockup.png",
     "github": "https://github.com/danieleksantos/Projeto-de-Estudo__Landpage-CSS_CoffeeShop-BOOTSTRAP",

@@ -1,4 +1,4 @@
-import { MapPin, ChevronDown } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 import VSCodeWindow from './VSCodeWindow'
 
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
               </h2>
             </header>
 
-            <div className="flex flex-wrap gap-4 pt-2">
+            <div className="flex flex-wrap gap-4 py-2">
               <button
                 onClick={scrollToProjects}
                 className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-black rounded-2xl shadow-xl shadow-purple-500/20 transition-all active:scale-95 text-sm uppercase tracking-widest cursor-pointer"
@@ -30,26 +30,10 @@ const Hero = () => {
               </button>
               <a
                 href="#contact"
-                className="px-8 py-4 border-1 border-purple-200 dark:border-purple-600 text-purple-600 dark:text-white font-black rounded-2xl bg-gray-200 dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 transition-all text-sm uppercase tracking-widest"
+                className="px-8 py-4 rounded-2xl tracking-widest transition-all text-sm uppercase bg-gray-100/50 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-purple-200 hover:border-purple-600 dark:border-purple-400 dark:hover:border-purple-700  text-purple-600 dark:text-white font-black"
               >
                 Contato
               </a>
-            </div>
-
-            <div className="flex flex-col gap-3 border-t border-gray-100 dark:border-gray-900 pt-6">
-              <div className="flex items-center gap-3 text-sm text-gray-500 italic">
-                <MapPin size={16} className="text-purple-500" />
-                Piracicaba, São Paulo
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                </span>
-                <span className="text-xs font-bold text-gray-700 dark:text-gray-300">
-                  Disponível para novos desafios
-                </span>
-              </div>
             </div>
           </div>
 

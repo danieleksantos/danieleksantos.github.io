@@ -78,7 +78,7 @@ const Skills = () => {
                 className={`font-black uppercase tracking-[0.3em] mb-6 ${
                   category.isPrimary
                     ? 'text-purple-600 text-xs'
-                    : 'text-gray-400 text-[10px]'
+                    : 'text-gray-600 text-[10px]'
                 }`}
               >
                 {category.title}
