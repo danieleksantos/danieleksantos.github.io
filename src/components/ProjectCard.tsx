@@ -46,7 +46,6 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
     <article
       className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-16 items-center`}
     >
-      {/* Container da Imagem com Link de Deploy */}
       <div className="w-full md:w-1/2 group relative">
         <a
           href={project.demo}
@@ -61,7 +60,6 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
             loading="lazy"
           />
 
-          {/* Badge de Categoria - Posicionamento Dinâmico */}
           <div
             className={`absolute top-6 ${isEven ? 'left-6' : 'right-6'} pointer-events-none transition-all duration-500`}
           >
@@ -75,7 +73,6 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         </a>
       </div>
 
-      {/* Conteúdo Informativo */}
       <div
         className={`w-full md:w-1/2 flex flex-col ${isEven ? 'text-left' : 'md:text-right md:items-end'}`}
       >
@@ -91,7 +88,6 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           {project.description}
         </p>
 
-        {/* Lista de Tecnologias */}
         <div
           className={`flex flex-wrap gap-2 mb-10 ${!isEven && 'md:justify-end'}`}
         >
@@ -105,7 +101,6 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           ))}
         </div>
 
-        {/* Botões de Ação */}
         <div
           className={`flex flex-col sm:flex-row gap-4 w-full sm:w-auto ${!isEven && 'md:flex-row-reverse'}`}
         >

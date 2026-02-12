@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="space-y-6">
             <header>
               <h1 className="text-5xl md:text-6xl font-black text-gray-900 dark:text-white tracking-tighter leading-tight">
-                Daniele K Santos<span className="text-purple-600">.</span>
+                Daniele K<span className="text-purple-600">.</span> Santos
               </h1>
               <h2 className="text-xl font-bold text-gray-400 dark:text-gray-500 mt-2 tracking-tight">
                 Desenvolvedora FullStack{' '}
