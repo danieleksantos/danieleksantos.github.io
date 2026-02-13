@@ -13,25 +13,53 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={handleToggle}
-      className="fixed top-6 right-6 z-50 p-3 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-md 
-                 shadow-lg border border-gray-200 dark:border-gray-700
-                 hover:scale-110 active:scale-95 transition-all duration-300
-                 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 cursor-pointer"
+      aria-pressed={theme === 'dark'}
       aria-label={
         theme === 'light' ? 'Ativar modo escuro' : 'Ativar modo claro'
       }
-      title={theme === 'light' ? 'Ativar modo escuro' : 'Ativar modo claro'}
+      className="absolute top-6 right-6 z-50 flex items-center p-1 rounded-full 
+                 bg-gray-200 dark:bg-gray-700 
+                 border border-gray-200 dark:border-gray-700
+                 transition-all duration-300 cursor-pointer group
+                 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950"
     >
-      <div className="relative w-6 h-6 flex items-center justify-center">
-        <Sun
-          className={`absolute w-5 h-5 text-yellow-500 transition-all duration-500 transform
-            ${theme === 'dark' ? 'scale-100 rotate-0 opacity-100' : 'scale-0 -rotate-90 opacity-0'}`}
-        />
+      <div
+        className={`
+          relative flex items-center rounded-full p-1 w-12 h-7 overflow-hidden transition-all duration-500
+          
+          group-hover:brightness-90
+          dark:group-hover:brightness-130
+          ${theme === 'dark' ? 'bg-purple-700' : 'bg-purple-300'}
+        `}
+      >
+        <div
+          className={`relative z-10 flex items-center justify-center w-5 h-5 rounded-full shadow-md transform transition-transform duration-500 cubic-bezier(0.34, 1.56, 0.64, 1) ${
+            theme === 'dark'
+              ? 'translate-x-5 bg-gray-600'
+              : 'translate-x-0 bg-gray-100'
+          }`}
+        >
+          {theme === 'light' ? (
+            <Sun
+              className="w-3 h-3 text-yellow-500 fill-yellow-500"
+              aria-hidden="true"
+            />
+          ) : (
+            <Moon
+              className="w-3 h-3 text-purple-300 fill-white"
+              aria-hidden="true"
+            />
+          )}
+        </div>
 
-        <Moon
-          className={`absolute w-5 h-5 text-purple-600 transition-all duration-500 transform
-            ${theme === 'light' ? 'scale-100 rotate-0 opacity-100' : 'scale-0 rotate-90 opacity-0'}`}
-        />
+        <div className="absolute inset-0 flex justify-between items-center px-2 pointer-events-none">
+          <Moon
+            className={`w-2.5 h-2.5 text-purple-600 transition-opacity duration-500 ${theme === 'light' ? 'opacity-20' : 'opacity-0'}`}
+          />
+          <Sun
+            className={`w-2.5 h-2.5 text-gray-400 transition-opacity duration-500 ${theme === 'dark' ? 'opacity-20' : 'opacity-0'}`}
+          />
+        </div>
       </div>
     </button>
   )

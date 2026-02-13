@@ -57,16 +57,14 @@ const Contact = () => {
         </header>
 
         <div className="flex flex-wrap items-center justify-start gap-12 md:gap-20">
-          {/* Botão de E-mail com A11y aprimorada */}
           <button
             onClick={handleCopyEmail}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            onFocus={() => setIsHovered(true)} // A11y: hover state para quem usa teclado
+            onFocus={() => setIsHovered(true)}
             onBlur={() => setIsHovered(false)}
             className="group flex items-center gap-3 text-gray-400 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:text-red-500 cursor-pointer relative focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-purple-600 rounded-sm"
             aria-label={`Copiar e-mail: ${email}`}
-            title="Copiar e-mail"
           >
             <div
               className="transition-all duration-300 transform group-hover:scale-110"
@@ -85,8 +83,10 @@ const Contact = () => {
               <span className="text-sm font-bold uppercase tracking-[0.2em]">
                 Email
               </span>
-              {/* aria-live="polite" faz o leitor de tela ler o "Copiado!" automaticamente */}
-              <div aria-live="polite" className="absolute -bottom-6 left-0 h-4">
+              <div
+                aria-live="polite"
+                className="absolute -bottom-6 left-0 h-4 min-w-[100px]"
+              >
                 {copied && (
                   <span className="text-[10px] font-black text-purple-500 uppercase tracking-widest animate-in fade-in slide-in-from-top-1">
                     Copiado!

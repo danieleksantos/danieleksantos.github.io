@@ -12,8 +12,15 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <header>
-              <h1 className="text-5xl md:text-6xl font-black text-gray-900 dark:text-white tracking-tighter leading-tight">
-                Daniele K<span className="text-purple-600">.</span> Santos
+              <h1
+                className="text-5xl md:text-6xl font-black text-gray-900 dark:text-white tracking-tighter leading-tight"
+                aria-label="Daniele K. Santos"
+              >
+                Daniele K
+                <span className="text-purple-600" aria-hidden="true">
+                  .
+                </span>{' '}
+                Santos
               </h1>
               <h2 className="text-xl font-bold text-gray-400 dark:text-gray-500 mt-2 tracking-tight">
                 Desenvolvedora FullStack{' '}
@@ -24,25 +31,28 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 py-2">
               <button
                 onClick={scrollToProjects}
-                className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-black rounded-2xl shadow-xl shadow-purple-500/20 transition-all active:scale-95 text-sm uppercase tracking-widest cursor-pointer"
+                className="px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white font-black rounded-2xl shadow-xl shadow-purple-500/20 transition-all active:scale-95 text-sm uppercase tracking-widest cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-purple-600"
               >
                 Projetos
               </button>
               <a
                 href="#contact"
-                className="px-8 py-4 rounded-2xl tracking-widest transition-all text-sm uppercase bg-gray-100/50 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-purple-200 hover:border-purple-600 dark:border-purple-400 dark:hover:border-purple-700  text-purple-600 dark:text-white font-black"
+                className="px-8 py-4 rounded-2xl tracking-widest transition-all text-sm uppercase bg-gray-100/50 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-purple-200 hover:border-purple-600 dark:border-purple-400 dark:hover:border-purple-700 text-purple-600 dark:text-white font-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-purple-600"
               >
                 Contato
               </a>
             </div>
           </div>
 
-          <div className="h-[380px] w-full flex items-center justify-center">
+          <div
+            className="h-[380px] w-full flex items-center justify-center"
+            aria-hidden="true"
+          >
             <div className="h-full w-full animate-none lg:animate-hero-spin will-change-transform">
               <div className="h-full w-full rounded-xl shadow-2xl shadow-gray-300/40 dark:shadow-neon transition-shadow duration-500 overflow-hidden">
                 <VSCodeWindow fileName="App.tsx">
                   <div className="h-full overflow-y-auto pr-2 font-mono text-[12px] md:text-[13px] leading-relaxed custom-scrollbar">
-                    <p>
+                    <p className="pt-3">
                       <span className="text-[#569cd6]">interface</span>{' '}
                       <span className="text-[#4ec9b0]">Developer</span> {'{'}
                     </p>
@@ -132,7 +142,7 @@ const Hero = () => {
                         </span>
                       </p>
                     </div>
-                    <p>{'}'};</p>
+                    <p className="pb-3">{'}'};</p>
                   </div>
                 </VSCodeWindow>
               </div>
@@ -143,8 +153,8 @@ const Hero = () => {
         <div className="flex justify-center mt-12 animate-bounce">
           <button
             onClick={scrollToProjects}
-            className="text-gray-300 dark:text-gray-700 hover:text-purple-500 transition-colors cursor-pointer"
-            aria-label="Rolar para projetos"
+            className="text-gray-300 dark:text-gray-700 hover:text-purple-500 transition-colors cursor-pointer focus-visible:outline-none focus-visible:text-purple-600"
+            aria-label="Rolar para a seção de projetos"
           >
             <ChevronDown size={32} />
           </button>

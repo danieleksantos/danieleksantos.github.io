@@ -9,6 +9,8 @@ interface SkillCategory {
   isPrimary?: boolean
 }
 
+const ICONS_TO_INVERT = ['nextdotjs', 'express', 'github', 'vercel', 'render']
+
 const Skills = () => {
   const skillCategories: SkillCategory[] = [
     {
@@ -63,19 +65,30 @@ const Skills = () => {
     <section
       id="skills"
       className="py-12 px-6 bg-white dark:bg-gray-950 transition-colors duration-500"
+      aria-labelledby="skills-title"
     >
       <div className="max-w-6xl mx-auto">
         <header className="mb-20">
-          <h2 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-4 tracking-tighter">
+          <h2
+            id="skills-title"
+            className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white mb-4 tracking-tighter"
+          >
             Stack <span className="text-purple-600">&</span> Tools
-            <span className="text-purple-600">.</span>
+            <span className="text-purple-600" aria-hidden="true">
+              .
+            </span>
           </h2>
         </header>
 
         <div className="space-y-16">
           {skillCategories.map((category) => (
-            <div key={category.title}>
+            <div
+              key={category.title}
+              role="group"
+              aria-labelledby={`category-${category.title.replace(/\s+/g, '-').toLowerCase()}`}
+            >
               <h3
+                id={`category-${category.title.replace(/\s+/g, '-').toLowerCase()}`}
                 className={`font-black uppercase tracking-[0.3em] mb-8 ${
                   category.isPrimary
                     ? 'text-purple-600 text-xs'
@@ -85,34 +98,24 @@ const Skills = () => {
                 {category.title}
               </h3>
 
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap gap-x-8 gap-y-6 md:gap-x-20">
+              <ul className="grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-wrap gap-x-8 gap-y-6 md:gap-x-20">
                 {category.skills.map((skill) => {
-                  const needsInversion = [
-                    'nextdotjs',
-                    'express',
-                    'github',
-                    'vercel',
-                    'render',
-                  ].includes(skill.icon)
+                  const needsInversion = ICONS_TO_INVERT.includes(skill.icon)
 
                   return (
-                    <div
+                    <li
                       key={`${category.title}-${skill.name}`}
                       className="group flex items-center gap-3 transition-all duration-300 md:hover:-translate-y-1"
                     >
                       <img
                         src={`https://cdn.simpleicons.org/${skill.icon}`}
                         alt=""
+                        aria-hidden="true"
                         className={`
                           transition-all duration-500
-                          /* Mobile: Full color */
                           grayscale-0 opacity-100 
-                          /* Desktop: Hover effects */
                           md:grayscale md:opacity-40 md:group-hover:grayscale-0 md:group-hover:opacity-100
-                          
-                          /* Dark Mode Inversion logic */
                           ${needsInversion ? 'dark:invert dark:brightness-200' : ''}
-
                           ${category.isPrimary ? 'w-8 h-8' : 'w-5 h-5'}
                         `}
                       />
@@ -128,10 +131,10 @@ const Skills = () => {
                       >
                         {skill.name}
                       </span>
-                    </div>
+                    </li>
                   )
                 })}
-              </div>
+              </ul>
             </div>
           ))}
         </div>
