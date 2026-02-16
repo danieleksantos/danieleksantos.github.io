@@ -24,7 +24,7 @@ Acesse o portfólio online:
 
 ---
 
-## 🛠 Decisões Técnicas e Arquitetura
+## Decisões Técnicas e Arquitetura
 
 Este repositório serve como documentação viva das minhas competências técnicas. Abaixo, detalho algumas das práticas aplicadas:
 
@@ -42,7 +42,7 @@ O projeto foi construído pensando em inclusão:
 - **Scroll Suave Compensado:** Lógica customizada para que a rolagem âncora considere a altura da Navbar, garantindo que o título da seção nunca seja sobreposto.
 - **Otimização:** Bundle otimizado e carregamento eficiente de recursos via Vercel.
 
-## 📂 Estrutura de Pastas (Arquitetura Modular)
+## Estrutura de Pastas (Arquitetura Modular)
 
 Seguindo padrões de **Clean Code**, a estrutura do projeto é organizada por responsabilidades:
 
