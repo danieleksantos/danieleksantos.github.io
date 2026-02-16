@@ -4,7 +4,7 @@
   # Daniele K. Santos - Portfolio
 
   <p>
-<strong>Desenvolvedora FullStack com foco em Front-End, Acessibilidade e Clean Code</strong>  </p>
+<strong>Desenvolvedora FullStack com foco em Front-End</strong>  </p>
 
 <p>
     <img src="https://img.shields.io/badge/React.js-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
