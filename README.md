@@ -15,14 +15,12 @@
 </p>
 </div>
 
----
 
 ## Live Demo
 
 Acesse o portfólio online:  
 👉 **[danieleksantos.vercel.app](https://danieleksantos.vercel.app)**
 
----
 
 ## Decisões Técnicas e Arquitetura
 
@@ -57,11 +55,9 @@ src/
 ```
 
 ## Boas Práticas Aplicadas
-SOLID: Princípio de Responsabilidade Única (SRP) aplicado na extração de componentes.
-
-TypeScript: Tipagem estrita para reduzir bugs em tempo de execução e melhorar a experiência de desenvolvimento.
-
-Mobile-First: Design responsivo fluido utilizando utilitários do Tailwind CSS.
+- SOLID: Princípio de Responsabilidade Única (SRP) aplicado na extração de componentes.
+- TypeScript: Tipagem estrita para reduzir bugs em tempo de execução e melhorar a experiência de desenvolvimento.
+- Mobile-First: Design responsivo fluido utilizando utilitários do Tailwind CSS.
 
 <br />
 
