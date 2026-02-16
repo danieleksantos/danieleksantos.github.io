@@ -4,13 +4,13 @@
   # Daniele K. Santos - Portfolio
 
   <p>
-    <strong>FullStack com foco em Front-End</strong>
-  </p>
+<strong>Desenvolvedora FullStack com foco em Front-End, Acessibilidade e Clean Code</strong>  </p>
 
 <p>
     <img src="https://img.shields.io/badge/React.js-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
     <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
     <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
+  <img src="https://img.shields.io/badge/Redux_Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux">
     <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
 </p>
 </div>
@@ -19,7 +19,7 @@
 
 ## 🌐 Live Demo
 
-O projeto está disponível em:  
+Acesse o portfólio online:  
 👉 **[danieleksantos.vercel.app](https://danieleksantos.vercel.app)**
 
 ---
@@ -28,21 +28,39 @@ O projeto está disponível em:
 
 Este repositório serve como documentação viva das minhas competências técnicas. Abaixo, detalho algumas das práticas aplicadas:
 
-### 1. Acessibilidade (A11y)
-Como um dos pilares do meu trabalho, implementei:
-- **Navegação por Teclado:** Uso de `focus-visible` e gerenciamento de foco no menu mobile.
-- **Semântica HTML5:** Uso rigoroso de tags como `<header>`, `<main>`, `<section>` e `<nav>`.
-- **Aria Attributes:** Implementação de `aria-expanded`, `aria-label` e `aria-pressed` para total suporte a leitores de tela.
+### 1. Estado Global com Redux Toolkit
+Utilizei o **Redux Toolkit** para gerenciar o estado global da aplicação, especificamente para o controle do tema (Dark/Light Mode). Esta decisão garante que a preferência do usuário seja propagada de forma consistente por todos os componentes, evitando o *prop drilling* e facilitando a manutenção.
 
-### 2. UI/UX Relevante
-- **Sticky Header & Scroll Preciso:** Implementação de lógica via JavaScript para compensação de altura da Navbar durante o scroll âncora.
-- **Performance:** Otimização de bundle e carregamento de imagens, visando atingir pontuações máximas no *Core Web Vitals*.
+### 2. Acessibilidade (A11y) como Prioridade
+O projeto foi construído pensando em inclusão:
+- **Navegação Semântica:** Uso rigoroso de tags HTML5 (`<header>`, `<main>`, `<section>`, `<nav>`).
+- **Atributos ARIA:** Implementação de `aria-expanded` para menus, `aria-label` para elementos interativos e `aria-pressed` para o toggle de tema.
+- **Gerenciamento de Foco:** Navegação por teclado otimizada e controle de foco no menu mobile.
 
-## Arquitetura e Boas Práticas
+### 3. UI/UX e Performance
+- **Sticky Navbar:** Implementação de um cabeçalho fixo com efeito *backdrop-blur*.
+- **Scroll Suave Compensado:** Lógica customizada para que a rolagem âncora considere a altura da Navbar, garantindo que o título da seção nunca seja sobreposto.
+- **Otimização:** Bundle otimizado e carregamento eficiente de recursos via Vercel.
 
-- SOLID: Princípio de Responsabilidade Única aplicado na componentização.
-- Clean Code: Código autodescritivo com foco em manutenibilidade.
-- Mobile-First: Design fluido que prioriza a experiência em dispositivos móveis.
+## 📂 Estrutura de Pastas (Arquitetura Modular)
+
+Seguindo padrões de **Clean Code**, a estrutura do projeto é organizada por responsabilidades:
+
+```text
+src/
+├── components/   # Componentes atômicos e reutilizáveis (Hero, Navbar, ProjectCard)
+├── data/         # Arquivos JSON para consumo de dados dinâmicos
+├── store/        # Configuração do Redux (Slices e Hooks customizados)
+├── types/        # Definições de interfaces e tipos TypeScript
+├── App.tsx       # Componente principal e orquestração de layout
+└── main.tsx      # Ponto de entrada da aplicação
+
+## Boas Práticas Aplicadas
+SOLID: Princípio de Responsabilidade Única (SRP) aplicado na extração de componentes.
+
+TypeScript: Tipagem estrita para reduzir bugs em tempo de execução e melhorar a experiência de desenvolvimento.
+
+Mobile-First: Design responsivo fluido utilizando utilitários do Tailwind CSS.
 
 <br />
 
