@@ -47,7 +47,7 @@ const Projects = () => {
   }
 
   return (
-    <section
+    <main
       id="projects"
       ref={sectionRef}
       className="pb-14 pt-5 bg-white dark:bg-gray-950 transition-colors duration-500"
@@ -130,7 +130,7 @@ const Projects = () => {
           </nav>
         )}
       </div>
-    </section>
+    </main>
   )
 }
 

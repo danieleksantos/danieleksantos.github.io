@@ -4,7 +4,7 @@
     "title": "Hotel Hub - Sistema de Gestão Hoteleira",
     "description": "Sistema completo de gestão hoteleira com autenticação JWT e dashboard administrativo. Plataforma robusta focada em adaptabilidade e performance, utilizando Docker e PostgreSQL.",
     "technologies": ["React", "Node.js", "PostgreSQL", "Docker", "Tailwind", "JWT"],
-    "image": "/images/hotel-hub-mockup.png",
+    "image": "/images/hotel-hub-mockup.jpg",
     "github": "https://github.com/danieleksantos/hotel-hub",
     "demo": "https://hotel-hub-seven.vercel.app",
     "category": "fullstack"
@@ -14,7 +14,7 @@
     "title": "GrowTwitter",
     "description": "Rede social com feed global, trends e sistema de follow. API RESTful escalável construída com Service Pattern, arquitetura em camadas e suporte a temas Dark/Light.",
     "technologies": ["React", "TypeScript", "Node.js", "Prisma", "PostgreSQL", "Redux"],
-    "image": "/images/growTwitter-mockup.png",
+    "image": "/images/growTwitter-mockup.webp",
     "github": "https://github.com/danieleksantos/grow-twitter",
     "demo": "https://grow-twitter.vercel.app/",
     "category": "fullstack"
@@ -24,7 +24,7 @@
     "title": "Buscar Patas",
     "description": "Sistema de adoção de pets com painel administrativo e métricas de gerenciamento. Aplicação moderna que conecta pets e adotantes utilizando Prisma ORM e autenticação segura.",
     "technologies": ["React", "Node.js", "Prisma", "PostgreSQL", "Bootstrap", "JWT"],
-    "image": "/images/buscar-patas-mockup.png",
+    "image": "/images/buscar-patas-mockup.webp",
     "github": "https://github.com/danieleksantos/BuscarPatas-sistema-de-adocao-de-pets",
     "demo": "https://buscar-patas-sistema-de-adocao-de-p.vercel.app/",
     "category": "fullstack"
@@ -34,7 +34,7 @@
     "title": "GrowBot",
     "description": "Assistente virtual inteligente que utiliza IA para guiar iniciantes em tecnologia. Chat interativo integrado com Google Gemini API para fornecer insights de carreira.",
     "technologies": ["React", "TypeScript", "Node.js", "Express", "Gemini AI", "MongoDB"],
-    "image": "/images/growBot-mockup.png",
+    "image": "/images/growBot-mockup.jpg",
     "github": "https://github.com/danieleksantos/GrowBot",
     "demo": "https://grow-bot.vercel.app/",
     "category": "fullstack"
@@ -44,7 +44,7 @@
     "title": "Catálogo de Produtos",
     "description": "E-commerce funcional com filtragem dinâmica e favoritos por categoria. Gerenciamento de estado via Context API e estilização seguindo a metodologia BEM.",
     "technologies": ["React", "TypeScript", "Context API", "CSS Modules"],
-    "image": "/images/catalogo-de-produtos-mockup.png",
+    "image": "/images/catalogo-de-produtos-mockup.jpg",
     "github": "https://github.com/danieleksantos/catalogo-de-produtos",
     "demo": "https://catalogo-de-produtos-ashen.vercel.app/",
     "category": "frontend"
@@ -54,7 +54,7 @@
     "title": "A Casa do Ney",
     "description": "Landing page institucional para ONG de apoio a crianças com deficiência. Projeto voluntário focado em presença digital, com componentes modernos e responsivos.",
     "technologies": ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    "image": "/images/a-casa-do-ney-mockup.png",
+    "image": "/images/a-casa-do-ney-mockup.jpg",
     "github": "https://github.com/danieleksantos/ong-a-casa-do-ney",
     "demo": "https://acasadoney.org/",
     "category": "frontend"
@@ -64,7 +64,7 @@
     "title": "Repo-Wikis",
     "description": "Explorador de repositórios do GitHub consumindo API oficial. Interface interativa para busca de usuários e repositórios, focada em manipulação de APIs REST.",
     "technologies": ["React", "JavaScript", "Styled Components", "GitHub API"],
-    "image": "/images/repo-wiki-mockup.png",
+    "image": "/images/repo-wiki-mockup.webp",
     "github": "https://github.com/danieleksantos/Repo-Wikis.git",
     "demo": "https://danieleksantos.github.io/Repo-Wikis/",
     "category": "frontend"
@@ -74,7 +74,7 @@
     "title": "GrowTravel",
     "description": "Landing page de agência de turismo com performance extrema. Foco total em SEO, acessibilidade e boas práticas, atingindo 100% de pontuação no Lighthouse.",
     "technologies": ["HTML", "CSS", "Lighthouse", "SEO"],
-    "image": "/images/growTravel-mockup.png",
+    "image": "/images/growTravel-mockup.jpg",
     "github": "https://github.com/danieleksantos/growtravel.git",
     "demo": "https://growtravel-nu.vercel.app/",
     "category": "frontend"
@@ -84,7 +84,7 @@
     "title": "Nikel",
     "description": "Aplicação de controle financeiro pessoal para gestão de receitas e despesas. Ferramenta intuitiva com armazenamento local e interface limpa para organização doméstica.",
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "image": "/images/nikel-mockup.png",
+    "image": "/images/nikel-mockup.jpg",
     "github": "https://github.com/danieleksantos/Nikel-Controle-Financeiro.git",
     "demo": "https://danieleksantos.github.io/Nikel-Controle-Financeiro/",
     "category": "frontend"
@@ -94,7 +94,7 @@
     "title": "Coffee Shop",
     "description": "Landing page responsiva para cafeteria com design personalizado. Interface visual agradável estruturada com princípios de design flexível e acessibilidade.",
     "technologies": ["HTML", "CSS", "Bootstrap"],
-    "image": "/images/coffee-shop-cell-mockup.png",
+    "image": "/images/coffee-shop-cell-mockup.jpg",
     "github": "https://github.com/danieleksantos/Projeto-de-Estudo__Landpage-CSS_CoffeeShop-BOOTSTRAP",
     "demo": "https://danieleksantos.github.io/Landing-Page__CSS-CoffeeShop-BOOTSTRAP/",
     "category": "frontend"
