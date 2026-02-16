@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/6a635d68-274b-411c-b135-46af3b6c6fea" alt="Portfolio Daniele K. Santos" width="40"/>
+  <img src="https://github.com/user-attachments/assets/6a635d68-274b-411c-b135-46af3b6c6fea" alt="Portfolio Daniele K. Santos" width="80"/>
 
   # Daniele K. Santos - Portfolio
 
