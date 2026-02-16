@@ -63,7 +63,6 @@ Como um dos pilares do meu trabalho, implementei:
 <p>Desenvolvido por <strong> Daniele K. Santos</strong></p>
 <p>
 <a href="www.linkedin.com/in/danieleksantos">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-0077B5%3Fstyle%3Dflat-square%26logo%3Dlinkedin%26logoColor%3Dwhite" alt="LinkedIn">
-</a>
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
 </div>
