@@ -65,8 +65,6 @@ Mobile-First: Design responsivo fluido utilizando utilitários do Tailwind CSS.
 
 <br />
 
-<hr />
-
 ## Preview
 <p align="center">
 <img src="https://github.com/user-attachments/assets/5873305c-77b1-45dc-aab9-8a570d845960" alt="Desktop Preview" width="750" />
@@ -79,6 +77,7 @@ Mobile-First: Design responsivo fluido utilizando utilitários do Tailwind CSS.
 </p>
 
 <br />
+<hr />
 
 <div align="center">
 <p>Desenvolvido por <strong> Daniele K. Santos</strong></p>
