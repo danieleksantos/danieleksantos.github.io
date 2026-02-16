@@ -59,8 +59,11 @@ Como um dos pilares do meu trabalho, implementei:
 <img src="https://github.com/user-attachments/assets/c7a482ad-4a21-4f77-b4c9-7fcb214f3f50" alt="Mobile Dark Mode" width="220" />
 </p>
 
+<br />
+
 <div align="center">
 <p>Desenvolvido por <strong> Daniele K. Santos</strong></p>
+
 <p>
 <a href="www.linkedin.com/in/danieleksantos">
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
