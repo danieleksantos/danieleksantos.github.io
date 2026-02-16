@@ -22,7 +22,7 @@ const Hero = () => {
                 </span>{' '}
                 Santos
               </h1>
-              <h2 className="text-xl font-bold text-gray-400 dark:text-gray-500 mt-2 tracking-tight">
+              <h2 className="text-xl font-bold text-gray-500 dark:text-gray-500 mt-2 tracking-tight">
                 Desenvolvedora FullStack{' '}
                 <span className="font-light">| Foco em Front-End</span>
               </h2>
