@@ -17,11 +17,11 @@ const ThemeToggle = () => {
       aria-label={
         theme === 'light' ? 'Ativar modo escuro' : 'Ativar modo claro'
       }
-      className="absolute top-6 right-6 z-50 flex items-center p-1 rounded-full 
-                 bg-gray-200 dark:bg-gray-700 
-                 border border-gray-200 dark:border-gray-700
-                 transition-all duration-300 cursor-pointer group
-                 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-950"
+      className="relative flex items-center p-1 rounded-full 
+             bg-gray-200 dark:bg-gray-700 
+             border border-transparent
+             transition-all duration-300 cursor-pointer group
+             focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-600"
     >
       <div
         className={`

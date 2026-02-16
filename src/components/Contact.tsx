@@ -35,10 +35,10 @@ const Contact = () => {
     <section
       id="contact"
       aria-labelledby="contact-title"
-      className="py-12 px-6 bg-white dark:bg-gray-950 transition-colors duration-500"
+      className="py-12 md:pt-20 md:pb-30 px-6 bg-white dark:bg-gray-950 transition-colors duration-500"
     >
       <div className="max-w-6xl mx-auto">
-        <header className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
+        <header className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-8 md:mb-20">
           <div className="space-y-2">
             <h2
               id="contact-title"
@@ -56,7 +56,7 @@ const Contact = () => {
           </p>
         </header>
 
-        <div className="flex flex-wrap items-center justify-start gap-12 md:gap-20">
+        <div className="flex flex-col md:flex-row items-left md:items-center justify-start gap-5 md:gap-12 md:gap-20">
           <button
             onClick={handleCopyEmail}
             onMouseEnter={() => setIsHovered(true)}
