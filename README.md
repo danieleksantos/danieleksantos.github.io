@@ -17,7 +17,7 @@
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
 Acesse o portfólio online:  
 👉 **[danieleksantos.vercel.app](https://danieleksantos.vercel.app)**
@@ -54,6 +54,7 @@ src/
 ├── types/        # Definições de interfaces e tipos TypeScript
 ├── App.tsx       # Componente principal e orquestração de layout
 └── main.tsx      # Ponto de entrada da aplicação
+```
 
 ## Boas Práticas Aplicadas
 SOLID: Princípio de Responsabilidade Única (SRP) aplicado na extração de componentes.
