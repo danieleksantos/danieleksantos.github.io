@@ -91,8 +91,8 @@ const Skills = () => {
                 id={`category-${category.title.replace(/\s+/g, '-').toLowerCase()}`}
                 className={`font-black uppercase tracking-[0.3em] mb-8 ${
                   category.isPrimary
-                    ? 'text-purple-600 text-xs'
-                    : 'text-gray-600 dark:text-gray-300 text-[10px]'
+                    ? 'text-purple-600 text-sm md:text-base xl:text-lg '
+                    : 'text-gray-600 dark:text-gray-300 text-xs md:text-sm xl:text-base]'
                 }`}
               >
                 {category.title}
@@ -124,8 +124,8 @@ const Skills = () => {
                           font-bold tracking-tight transition-colors whitespace-nowrap
                           ${
                             category.isPrimary
-                              ? 'text-lg md:text-xl text-gray-900 dark:text-white'
-                              : 'text-sm text-gray-500 dark:text-gray-400 md:group-hover:text-gray-900 md:dark:group-hover:text-white'
+                              ? 'text-base md:text-lg xl:text-xl text-gray-900 dark:text-white'
+                              : 'text-sm md:text-base text-gray-500 dark:text-gray-400 md:group-hover:text-gray-900 md:dark:group-hover:text-white'
                           }
                         `}
                       >
