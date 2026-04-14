@@ -1,6 +1,16 @@
 [
     {
-    "id": 1,
+      "id": 1,
+      "title": "Projeto Voluntário - Site Institucional ONG ABRADEPA",
+      "description": "Site Institucional desenvolvido para centralizar as informações da associação, oferecendo uma interface moderna para apresentação da ONG. Projeto conta com um painel administrativo intuitivo para a equipe interna gerenciar entradas estratégicas de dados mesmo após entrega.",
+      "technologies": ["Next", "Next-Sanity", "React", "TypeScript", "Tailwind"],
+      "image": "/images/abradepa-mockup.webp",
+      "github": "https://github.com/danieleksantos/abradepa-ong",
+      "demo": "https://www.abradepa.org.br/",
+      "category": "fullstack"
+    },
+    {
+    "id": 2,
     "title": "Smart Inventory Management - Gestão Inteligente de Produção",
     "description": "O Smart Inventory é uma plataforma robusta desenvolvida para indústrias que necessitam controlar estoques de insumos e otimizar a fabricação de produtos. O algoritmo desenvolvido sugere a produção baseando-se no estoque atual e priorizando produtos de maior valor agregado.",
     "technologies": ["React", "TypeScript", "Tailwind", "PostgreSQL", "Docker", "Java (Quarkus)", "Cypress (E2E)", "JUnit 5"],
@@ -10,7 +20,7 @@
     "category": "fullstack"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Hotel Hub — Gestão Hoteleira",
     "description": "Plataforma robusta para administração de redes hoteleiras com dashboard administrativo. Uso de Docker para orquestração, SQL puro para performance em PostgreSQL e autenticação segura com JWT e middlewares de proteção.",
     "technologies": ["React", "Node.js", "PostgreSQL", "Docker", "JWT", "Tailwind"],
@@ -20,7 +30,7 @@
     "category": "fullstack"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Buscar Patas — Gestão de Adoção Animal",
     "description": "Ecossistema completo para ONGs de adoção de animais, implementando controle de acesso por níveis. Uso de Docker com Multi-stage Builds para implantação otimizada, busca com filtros dinâmicos e arquitetura orientada a dados com Prisma ORM.",
     "technologies": ["React", "Node.js", "Prisma", "PostgreSQL", "Docker", "Bootstrap"],
@@ -30,7 +40,7 @@
     "category": "fullstack"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "GrowTwitter — Rede Social",
     "description": "Rede social inspirada no Twitter com foco em UX avançada, implementando Optimistic UI para interações instantâneas. Possui sistema de temas persistentes e gerenciamento de estado global no ecossistema Node.js.",
     "technologies": ["React", "TypeScript", "Redux", "Node.js", "Prisma", "Material UI"],
@@ -40,7 +50,7 @@
     "category": "fullstack"
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "GrowBot — Mentor de Carreira com IA",
     "description": "Assistente virtual inteligente integrado à API do Google Gemini. O sistema gerencia contextos complexos de conversação para guiar iniciantes em tecnologia, utilizando MongoDB para persistência de histórico e Clerk para autenticação segura e moderna.",
     "technologies": ["React", "Node.js", "Gemini AI", "MongoDB", "Clerk", "Express"],
@@ -50,7 +60,7 @@
     "category": "fullstack"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "GrowTwitter API — Engine de Rede Social",
     "description": "API RESTful escalável construída sob o Service Layer Pattern e Arquitetura em Camadas. Implementa lógica complexa de feed (seguidores vs. global), paginação eficiente, validação rigorosa de dados com Zod e segurança robusta com JWT e Bcrypt.",
     "technologies": ["Node.js", "TypeScript", "Prisma", "PostgreSQL", "Zod", "JWT"],
@@ -60,7 +70,7 @@
     "category": "backend"
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "TechNews — Portal de Notícias",
     "description": "Portal de notícias do universo tech desenvolvido com Next.js e Supabase, focado em performance, SEO e acessibilidade. Arquitetura Headless CMS com renderização SSR + Dynamic Rendering, integração com PostgreSQL, paginação dinâmica e suporte nativo a Dark Mode.",
     "technologies": ["Next.js", "React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Vercel"],
