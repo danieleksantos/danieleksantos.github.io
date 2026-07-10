@@ -108,10 +108,6 @@ const Hero = () => {
                         ,
                       </p>
                       <p>
-                        <span className="text-[#9cdcfe]">primaryFocus</span>:{' '}
-                        <span className="text-[#ce9178]">"Front-End"</span>,
-                      </p>
-                      <p>
                         <span className="text-[#9cdcfe]">stack</span>: [
                         <span className="text-[#ce9178]">"React"</span>,{' '}
                         <span className="text-[#ce9178]">"TypeScript"</span>,{' '}
